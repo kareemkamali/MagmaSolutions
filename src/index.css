@@ -246,7 +246,7 @@ html {
       flex-wrap: wrap;
   position: relative;
   z-index: 1;
-  padding: 50px 100px;
+  padding: 20px 100px;
   width: 100%;
   height: 100vh;
 }
@@ -257,13 +257,13 @@ html {
 
 .vision-title h1 {
   color: #683385;
-  font-size: 50px;
+  font-size: 25px;
   font-weight: bolder;
 }
 
 .vision-title h2 {
   color: #FF7900;
-  font-size: 40px;
+  font-size: 20;
   font-weight: bolder;
   font-style: oblique;
 }
@@ -284,11 +284,11 @@ html {
 
 .vision-content .vision-text h2 {
   color: #683385;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .vision-content img {
-  width: 50%;
+  width: 46%;
 }
 
 .arrow-services h1 {
@@ -379,7 +379,7 @@ html {
 .services-image h2 {
   color: #683385;
   text-align: justify;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .services-container-right {
@@ -436,12 +436,13 @@ html {
 
 .our-product > img {
   position: absolute;
-  z-index: -1;
+  z-index: -5;
   width: 100%;
   height: 100%;
 }
 
 .product-title {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,7 +452,6 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 50px;
   margin: auto auto;
   width: 90%;
   border-bottom: 3px solid #FF7900;
@@ -476,7 +476,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px 70px;
+  padding: 70px 70px;
 }
 
 .product-content {
@@ -506,7 +506,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   margin-right: 10px;
-  height: 350px;
+  max-height: 200px;
 }
 
 .product-content .product-image img {
@@ -567,14 +567,14 @@ html {
 }
 
 .team-title {
-  padding: 10px 130px;
+  padding: 0px 130px;
   position: relative;
 }
 
 .team-title h1 {
   color: #683385;
   text-align: center;
-  font-size: 70px;
+  font-size: 40px;
   border-bottom: 3px solid #FF7900;
 }
 
@@ -587,7 +587,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   height: calc(100vh - 150px);
-  padding: 20px 130px;
+  padding: 30px 130px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -599,8 +599,8 @@ html {
 
 .person-content img {
   position: relative;
-  width: 200px;
-  height: 200px;
+  max-width: 100px;
+  max-height: 100px;
   z-index: 99;
 }
 
@@ -666,6 +666,7 @@ html {
 .contact-form {
   position: relative;
   width: 42%;
+  max-height: calc(100vh - 11px);
   padding: 0 50px;
 }
 
@@ -717,8 +718,7 @@ html {
 .form-content .form-title img {
   position: relative;
   z-index: 999;
-  width: 30%;
-  height: 10%;
+  width: 20%;
 }
 
 .form-content .form-title h1 {
@@ -851,7 +851,7 @@ html {
 
 .footer-section {
   width: 100%;
-  height: 300px;
+  height: 200px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -869,9 +869,14 @@ html {
 }
 
 .footer-image {
-  width: 100px;
-  height: 10px;
+  position: relative;
+  width: 300px;
+  height: 100px;
   z-index: 999;
-  padding: 20px 90px;
+  padding: 0px 90px;
+}
+
+.footer-image img {
+  width: 100%;
 }
 /*# sourceMappingURL=index.css.map */

@@ -15,9 +15,9 @@
 }
 .contact-form{
     position: relative;
- 
+
    width: 42%;
- 
+ max-height: calc(100vh - 11px);
     padding: 0 50px;
     >h1{
         
@@ -44,15 +44,14 @@
     display: flex;
     flex-direction: column;
     padding: 0 10px;
-
     .form-title{
         display: flex;
 align-items: center;
         img{
             position: relative;
             z-index: 999;
-            width: 30%;
-            height: 10%;
+            width: 20%;
+       
         }
         h1{
             color: $VioletColor;
