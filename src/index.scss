@@ -1,0 +1,20 @@
+//import Global Variable and css for Websites
+@import "./assets/styles/Global";
+
+@import "./shared/NavBar/MainHeader";
+@import "./shared/NavBar/MainNavigation";
+
+@import "./components/HeroSection/HeroSection";
+@import "./shared/FormElements/Button";
+@import "./components/VisionSection/VisionSection";
+
+@import "./components/OurServices/OurServices";
+
+@import "./components/OurProduct/OurProduct";
+
+@import "./components/OurTeam/OurTeam";
+
+@import "./components/Contact-us/contactUs";
+@import "./shared/UiElement/Card";
+@import "./shared/FormElements/Input";
+@import "./shared/Footer/Footer";

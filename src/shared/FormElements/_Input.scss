@@ -1,0 +1,64 @@
+.form-control {
+    margin: 1rem 2rem;
+ 
+    ::placeholder{
+      font-size: 1.4rem;
+      font-weight: bolder;
+      color: #dfdfdf;
+  }
+  p{
+      font-size: 1rem;
+      font-weight: 800;
+
+  }
+}
+  .form-control label,
+  .form-control input,
+  .form-control textarea {
+    display: block;
+    color: $VioletColor;
+    font-size: 1.5rem;
+    
+  }
+  
+  .form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control input,
+  .form-control textarea {
+    width: 100%;
+    font: inherit;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid $VioletColor;
+    padding: 0.15rem 0.25rem;
+    color: $OrangeColor;
+    font-size: 1.5rem;
+    font-weight: 800
+  }
+  .form-control textarea{
+  border: 1px solid $VioletColor;
+  border-radius:10px;
+  resize: none;
+  }
+
+
+  .form-control input:focus,
+  .form-control textarea:focus {
+    outline: none;
+    background: #ebebeb;
+    border-color: #510077;
+  }
+  
+  .form-control--invalid label,
+  .form-control--invalid p {
+    color: $OrangeColor;
+  }
+  
+  .form-control--invalid input,
+  .form-control--invalid textarea {
+    border-color: $OrangeColor;
+    background: $OrangeColor;
+  }
