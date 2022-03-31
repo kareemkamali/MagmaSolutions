@@ -10,7 +10,7 @@ const Footer = () => {
         <img src={ImageBackground} alt='footer-background'></img>
 
         <div className='footer-image'>
-          
+          asssssss
         </div>
 
 
