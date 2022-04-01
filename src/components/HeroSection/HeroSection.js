@@ -11,7 +11,7 @@ const HeroSection = () => {
         <section id='Hero-Section'>
 
           <div className='hero-k'>
-          <img className='hero-bg' src={HeroBackground}></img>  
+                <img className='hero-bg' src={HeroBackground}></img>  
          <div className='hero-container'>
             <div className='hero-text'>
               <h1>Only One Creative way</h1>

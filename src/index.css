@@ -9,6 +9,7 @@
 body {
   margin: 0;
   font-family: 'Poppins',sans-serif;
+  height: 100%;
 }
 
 html {
@@ -112,10 +113,11 @@ html {
   height: 100vh;
 }
 
-.hero-k > img {
+.hero-k .hero-bg {
   position: absolute;
   width: 100%;
   height: 100vh;
+  z-index: -1;
 }
 
 .hero-container {
@@ -129,7 +131,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   z-index: 999;
   padding: 0 100px;
 }
@@ -147,15 +149,6 @@ html {
   font-size: 30px;
   color: #20242D;
   margin-bottom: 40px;
-}
-
-@media screen and (max-width: 768px) {
-  .hero-text h1 {
-    font-size: 20px;
-  }
-  .hero-text h2 {
-    font-size: 15px;
-  }
 }
 
 .button {
@@ -223,18 +216,18 @@ html {
 
 .vision-section {
   width: 100%;
-  margin-top: 0px;
   height: 100vh;
   position: relative;
 }
 
-.vision-section > img {
+.vision-section .vision-image {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
+  z-index: -1;
 }
 
-.vision-container {
+.vision-section, .vision-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,15 +237,17 @@ html {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative;
   z-index: 1;
-  padding: 20px 100px;
+  padding: 0px 100px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  position: relative;
 }
 
 .vision-title {
   text-align: center;
+  position: relative;
+  padding-top: 22px;
 }
 
 .vision-title h1 {
@@ -263,9 +258,8 @@ html {
 
 .vision-title h2 {
   color: #FF7900;
-  font-size: 20;
+  font-size: 25px;
   font-weight: bolder;
-  font-style: oblique;
 }
 
 .vision-content {
@@ -279,7 +273,12 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 50px;
+  position: relative;
   width: 100%;
+}
+
+.vision-content .vision-text {
+  padding-bottom: 10px;
 }
 
 .vision-content .vision-text h2 {
@@ -298,29 +297,6 @@ html {
 
 .arrow-services img {
   width: 10%;
-}
-
-@media screen and (max-width: 768px) {
-  .vision-container {
-    padding: 80px 0;
-  }
-  .vision-title {
-    height: 0px;
-  }
-  .vision-title h2 {
-    font-size: 25px;
-  }
-  .vision-content .vision-text h2 {
-    font-size: 15px;
-  }
-  .vision-content img {
-    width: 50%;
-    height: 100%;
-  }
-  .arrow-services h1 {
-    color: #683385;
-    font-size: 12px;
-  }
 }
 
 .services-section {
@@ -420,28 +396,27 @@ html {
   font-size: medium;
 }
 
-@media screen and (max-width: 768px) {
-  .services-container-right h1 {
-    font-size: 30px;
-  }
-  .services-image h2 {
-    font-size: 15px;
-  }
-}
-
 .our-product {
   width: 100%;
   height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.our-product > img {
+.our-product .product-background {
   position: absolute;
-  z-index: -5;
+  z-index: -1;
   width: 100%;
   height: 100%;
 }
 
-.product-title {
+.our-product .product-title {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,18 +432,19 @@ html {
   border-bottom: 3px solid #FF7900;
 }
 
-.product-title h1 {
+.our-product .product-title h1 {
   color: #683385;
   font-weight: bolder;
   font-size: 40px;
 }
 
-.product-title h2 {
+.our-product .product-title h2 {
   color: #683385;
   border-bottom-color: #FF7900;
 }
 
-.product-container {
+.our-product > .product-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,7 +455,8 @@ html {
   padding: 70px 70px;
 }
 
-.product-content {
+.product-container
+> .product-content {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,12 +471,14 @@ html {
           justify-content: space-between;
 }
 
-.product-content h1 {
+.product-container
+> .product-content h1 {
   text-align: center;
   color: #683385;
 }
 
-.product-content .product-image {
+.product-container
+> .product-content .product-image {
   position: relative;
   left: 10px;
   display: -webkit-box;
@@ -507,9 +486,13 @@ html {
   display: flex;
   margin-right: 10px;
   max-height: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.product-content .product-image img {
+.product-container
+> .product-content .product-image img {
   width: 100%;
   height: 100%;
 }
@@ -520,65 +503,32 @@ html {
   border: 3px dashed #FF7900;
 }
 
-@media screen and (min-width: 1440px) {
-  .product-title {
-    padding-top: 70px;
-  }
-  .product-content .product-image {
-    height: 500px;
-  }
-}
-
-.bottom-border {
-  width: 80%;
-  margin: auto auto;
-  border: 3px dashed #FF7900;
-}
-
-@media screen and (max-width: 768px) {
-  .product-title {
-    padding-top: 90px;
-  }
-  .product-content {
-    padding-top: 100px;
-  }
-  .product-content .product-image {
-    height: 400;
-  }
-  .product-content h1 {
-    font-size: 18px;
-  }
-  .bottom-border {
-    margin-top: 100px;
-  }
-}
-
 .team-section {
   position: relative;
   width: 100%;
   height: 100vh;
 }
 
-.team-section img {
+.team-section img, .team-section .team-background {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   z-index: -1;
 }
 
-.team-title {
+.team-section .team-title {
   padding: 0px 130px;
   position: relative;
 }
 
-.team-title h1 {
+.team-section .team-title h1 {
   color: #683385;
   text-align: center;
   font-size: 40px;
   border-bottom: 3px solid #FF7900;
 }
 
-.team-content {
+.team-section .team-content {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,59 +537,34 @@ html {
       -ms-flex-align: center;
           align-items: center;
   height: calc(100vh - 150px);
-  padding: 30px 130px;
+  padding: 30px 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.person-content {
+.team-section .team-content .person-content {
+  width: 32%;
   text-align: center;
+  position: relative;
 }
 
-.person-content img {
+.team-section .team-content .person-content img {
   position: relative;
   max-width: 100px;
   max-height: 100px;
   z-index: 99;
 }
 
-.person-content h1 {
+.team-section .team-content .person-content h1 {
   text-align: center;
   color: #683385;
 }
 
-.person-content h2 {
+.team-section .team-content .person-content h2 {
   color: #FF7900;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 600;
-}
-
-@media screen and (min-width: 1440px) {
-  .team-content {
-    padding: 0;
-  }
-  .person-content {
-    text-align: center;
-  }
-  .person-content img {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    z-index: 99;
-  }
-  .person-content h1 {
-    font-size: 50px;
-  }
-  .person-content h2 {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .team-content {
-    padding: 0;
-  }
 }
 
 .contact-section {
@@ -656,27 +581,27 @@ html {
       justify-content: space-around;
 }
 
-.contact-section img {
+.contact-section img, .contact-section .contact-background {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
 
-.contact-form {
+.contact-section .contact-form {
   position: relative;
   width: 42%;
   max-height: calc(100vh - 11px);
   padding: 0 50px;
 }
 
-.contact-form > h1 {
+.contact-section .contact-form > h1 {
   padding-left: 50px;
   font-size: 22px;
   color: #FF7900;
 }
 
-.spins {
+.contact-section .spins {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -687,7 +612,7 @@ html {
   padding: 0 10px;
 }
 
-.spins .spin {
+.contact-section .spins .spin {
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -695,7 +620,7 @@ html {
   border: 2px solid #683385;
 }
 
-.form-content {
+.contact-section .form-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,7 +631,7 @@ html {
   padding: 0 10px;
 }
 
-.form-content .form-title {
+.contact-section .form-content .form-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -715,45 +640,32 @@ html {
           align-items: center;
 }
 
-.form-content .form-title img {
+.contact-section .form-content .form-title img {
   position: relative;
   z-index: 999;
   width: 20%;
 }
 
-.form-content .form-title h1 {
+.contact-section .form-content .form-title h1 {
   color: #683385;
   font-size: 35px;
 }
 
-.btn-contactUs {
+.contact-section .btn-contactUs {
   text-align: center;
 }
 
 .contact-image {
   z-index: 999;
   position: relative;
-  width: 60%;
+  width: 50%;
   height: 100%;
 }
 
 .contact-image img {
   z-index: 999;
-  padding-top: 200px;
   position: relative;
   width: 100%;
-}
-
-@media screen and (max-width: 1020px) {
-  .contact-form {
-    width: 70%;
-  }
-  .contact-form h1 {
-    font-size: 20px;
-  }
-  .form-content .form-title h1 {
-    font-size: 28px;
-  }
 }
 
 .card {

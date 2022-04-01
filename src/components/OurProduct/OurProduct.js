@@ -10,9 +10,9 @@ console.log(document.getElementsByClassName('our-product'))
   return (
    
    <>
-<div className='our-product'>
+                <div className='our-product'>
 
-        <img src={ProductImageBackground} alt="product-bkg"></img>
+        <img className='product-background' src={ProductImageBackground} alt="product-bkg"></img>
         <div className='product-title'>
         <h1>Our Products</h1>
         <Link>

@@ -19,7 +19,7 @@ const inputHandler=()=>{}
 <>
 <section id='contact-us'>
     <div className='contact-section'>
-        <img src={bakcgroundImage}></img>
+        <img className='contact-background' src={bakcgroundImage}></img>
        <div className='contact-form'>
         <h1>Are You Ready To Grow?</h1>
     <Card>

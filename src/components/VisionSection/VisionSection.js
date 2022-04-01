@@ -7,7 +7,7 @@ const VisionSection = () => {
  <>
  <section id='vision'>
         <div className='vision-section'> 
-     <img src={VisionBackground} alt="vision-bkg"></img>
+     <img className='vision-image' src={VisionBackground} alt="vision-bkg"></img>
       <div className='vision-container'>
               <div className='vision-title'>
                 <h1>MAGMA SOLUTIONS</h1>
