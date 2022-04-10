@@ -22,12 +22,12 @@ const DUMMY_PRODUCT=[
         id:'product3',
         image:ProductImage3,
         text:'venus Template' 
+    },   {
+        id:'product3',
+        image:ProductImage3,
+        text:'venus Template' 
     },
-    {
-        id:'product4',
-        image:ProductImage4,
-        text:'Uran Template' 
-    }
+
 
 ]
 export default DUMMY_PRODUCT;

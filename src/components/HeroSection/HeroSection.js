@@ -2,29 +2,49 @@ import React from 'react'
 import HeroImage from '../../assets/images/hero-vector.png';
 import Button from '../../shared/FormElements/Button';
 import HeroBackground from '../../assets/images/hero-bg.jpg';
-import Div100vh from 'react-div-100vh';
-
+import HeroBackgroundMobile from '../../assets/images/MobileImages/HeroBg.png';
+import TextImage from '../../assets/images/ellipses.png';
 const HeroSection = () => {
   return (
     <>
 
-        <section id='Hero-Section'>
+        <div className="hero-section">
+        <img className="hero-bg" src={HeroBackground}/>
+        <img className="hero-bg-m" src={HeroBackgroundMobile}/>
+        <div className="hero-content">
+          <img className='behind-text' src={TextImage}></img>
+        <div className='hero-text'>
+              <h1>Only One Creative way</h1>
+              <h2>To Do Things Perfectly ...</h2>
+              <div className='hero-btn'>
+              <Button size='big' >Get A Quote</Button>
+              </div></div>
+            <div className='hero-image'> <img src={HeroImage} alt=""/></div>
+        </div>
+    </div>
+   
+
+        {/* <section id='Hero-Section'>
 
           <div className='hero-k'>
-                <img className='hero-bg' src={HeroBackground}></img>  
+              <img className='hero-bg' src={HeroBackground}></img>  
          <div className='hero-container'>
             <div className='hero-text'>
               <h1>Only One Creative way</h1>
               <h2>To Do Things Perfectly ...</h2>
+              <div className='hero-btn'>
               <Button >Get A Quote</Button>
+              </div>
             </div>
+<div className='hero-image-right'>
+<img className='hero-image' src={HeroImage} alt='Hero Image'></img>
 
-            <img className='hero-image' src={HeroImage} alt='Hero Image'></img>
-
+</div>
+          
           </div>  
           
           </div>
-        </section>
+        </section> */}
       
         </>
   )

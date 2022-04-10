@@ -12,15 +12,14 @@ import MainNavigation from '../shared/NavBar/MainNavigation'
 const HomePage = () => {
   return (
  <>
- <MainNavigation></MainNavigation>
- <HeroSection></HeroSection>
-
-  <VisionSection></VisionSection>
-<OurServices></OurServices>
-  <OurProduct></OurProduct>
- <OurTeam></OurTeam>
-  <ContactUs></ContactUs>
- {/* <Footer></Footer> */}
+   <MainNavigation></MainNavigation>
+   <HeroSection></HeroSection> 
+   <VisionSection></VisionSection> 
+   <OurServices></OurServices>
+  <OurProduct></OurProduct> 
+   <OurTeam></OurTeam>
+   <ContactUs></ContactUs>
+ <Footer></Footer>
  </>
   )
 }

@@ -1,68 +1,78 @@
 .contact-section{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 
-    img, .contact-background{
+
+     .contact-background{
         position: absolute;
         width: 100%;
         height: 100%;
         z-index: -1;
     }
-    .contact-form{
-    
-        position: relative;
-    
-       width: 42%;
-     max-height: calc(100vh - 11px);
-        padding: 0 50px;
-        >h1{
-            
-           padding-left: 50px;
-            font-size: 22px;
-            color: $OrangeColor;
-        }
-    }
-    .spins{
-        position: relative;
+    .contact-container{
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
         display: flex;
+        padding: 0 100px;
         justify-content: space-between;
-        padding: 0 10px;
-        .spin{
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            background-color: $OrangeColor;
-            border:2px solid $VioletColor
-        }
+        align-items: center;
+
+
     }
-    .form-content{
-        display: flex;
-        flex-direction: column;
-        padding: 0 10px;
-        .form-title{
-            display: flex;
-    align-items: center;
-            img{
-                position: relative;
-                z-index: 999;
-                width: 20%;
-           
-            }
-            h1{
-                color: $VioletColor;
-                font-size: 35px;
-            }
-        }
-    }
-    .btn-contactUs{
-     
-        text-align: center;
+   
+}
+
+.contact-form{    
+  position: relative;
+// width: 30%;
+    h1{
+        padding: 0 20px;
+        margin: 0;
+        font-size: 1.5vw;
+        color: $OrangeColor;
     }
 }
+.spins{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    .spin{
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: $OrangeColor;
+        border:2px solid $VioletColor
+    }
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    .form-title{
+        display: flex;
+align-items: center;
+        img{
+            position: relative;
+            z-index: 999;
+            width: 20%;
+       
+        }
+        h1{
+            color: $VioletColor;
+            font-size:2vw;
+            line-height: 0;
+        }
+    }
+}
+.btn-contactUs{
+ 
+    text-align: center;
+}
+
 
 
 
@@ -70,22 +80,68 @@
 
 .contact-image{
 z-index: 999;
-position: relative;
-   width: 50%;
-   height: 100%;
+display: flex;
+justify-content: end;
+// width: 50%;
+
 img{
+position: relative;
+width:50%;
+}}
+
+
+@media screen and(max-width:1024px) {
+    .contact-form{ 
+        h1{
+            font-size:20px;
+        }
+     }
+    .contact-section{
     
-    z-index: 999;
-   
-    position: relative;
-    width:100%;
+        .contact-container{
+        flex-wrap: wrap-reverse;
+            padding: 0 0px;
+           
+    
+    
+        }
+       
+    }
+    .form-content{
+     
+        .form-title{
+           
+            img{
+            
+                width: 20%;
+           
+            }
+            h1{
+              
+                font-size:20px;
+               
+            }
+        }
+    
+    }
+
+    .spins{
+          
+        .spin{
+            width: 15px;
+            height: 15px;
+           
+        }
+    }
+
+    .contact-image{
+    justify-content: center;
+        // width: 50%;
+        
+        img
+        {
+        position: relative;
+        width:40%;
+        }
+    }
 }
-}
-
-
-
-
-
-
-
-

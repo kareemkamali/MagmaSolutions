@@ -1,5 +1,6 @@
 import React from 'react';
-import bakcgroundImage from "../../assets/images/contact-section-bkg.png"
+import bakcgroundImage from "../../assets/images/contact-section-bkg.png";
+//2e2lob background 
 import Card from '../../shared/UiElement/Card';
 import PaperImage from '../../assets/images/PaperPlane.png';
 import contactImage from '../../assets/images/contactimage.png';
@@ -20,7 +21,9 @@ const inputHandler=()=>{}
 <section id='contact-us'>
     <div className='contact-section'>
         <img className='contact-background' src={bakcgroundImage}></img>
-       <div className='contact-form'>
+
+<div className='contact-container'>
+<div className='contact-form'>
         <h1>Are You Ready To Grow?</h1>
     <Card>
     <div className='form-container-contact'> 
@@ -81,6 +84,11 @@ const inputHandler=()=>{}
         <div className='contact-image'>
           <img src={contactImage} alt='contact-image'/>
         </div>
+
+</div>
+
+
+     
         
          </div>
        

@@ -54,11 +54,14 @@
   
   .form-control--invalid label,
   .form-control--invalid p {
+    
     color: $OrangeColor;
+  line-height: 10px;  
   }
   
   .form-control--invalid input,
   .form-control--invalid textarea {
     border-color: $OrangeColor;
     background: $OrangeColor;
+  
   }

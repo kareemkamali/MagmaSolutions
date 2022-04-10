@@ -4,30 +4,17 @@ $VioletColor:#683385;
 $OrangeColor:#FF7900;
 $SloganColor:#20242D;
 $HeroImage:"../assets/images/hero-bg.jpg";
-*{
-    margin:0;
-    box-sizing: border-box;
-    padding:0px;
-  
 
+
+* {
+  box-sizing: border-box;
 }
-body{
+
+html {
   margin: 0;
-  font-family: 'Poppins',sans-serif;
-  
-  height: 100%;
 }
 
-html{
-    width: 100%;
-    height: 100%;
-  
-
-}
-html{
-    width: 100%;
-    height: 100%;
-    
-    
-  
+body {
+  margin: 0;
+font-family: 'Poppins',sans-serif;
 }

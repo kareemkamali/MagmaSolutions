@@ -1,53 +1,120 @@
-.hero-k{
-position: relative;
-width: 100%;
-height: 100vh;
 
-  .hero-bg{
-  
- position: absolute;
-width: 100%;
-  height: 100vh;
-   z-index: -1;
-  }
-}
-.hero-container{
-position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
+.hero-section {
   width: 100%;
-  max-height: 100%;
-  z-index: 999;
-padding: 0 100px;
-.hero-image{
- 
-  width: 46%;} 
-   
+  height:100%;
+  min-height: 100vh;
+  position: relative;  
 }
-.hero-text{
- 
-  h1{
-    font-size: 38px;
-    color: $SloganColor;
-  }
-  h2{
-    font-size: 30px;
-    color: $SloganColor;
-    margin-bottom: 40px;
-  }
-}
-// @media screen and(max-width:768px) {
-//   .hero-text{
-  
-//     h1{
-//       font-size: 20px;
 
-//     }
-//     h2{
-//       font-size: 15px;
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+ 
+}
+.hero-bg-m{
+  display: none;
+}
+
+.hero-content {
+  width: 100%;
+  height: 100%;
+min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  .behind-text{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    z-index: -1;
     
-//     }
-//   }
+    object-fit: contain;
+    width: 40%;
+    
+  }
+  .hero-text{
+    
   
-// }
+    h1{
+      color: $SloganColor;
+      font-size: 3vw;
+    line-height: normal;
+    }
+    h2{
+      color: $SloganColor;
+      font-size: 2vw;
+      line-height: 0px;
+    }
+    .hero-btn{
+   
+      margin-top: 12vh;
+    }
+  }
+}
+.hero-image{
+  width: 30vw;
+  img{
+    width: 100%;
+  }
+}
+
+@media screen and(max-width:1024px) {
+  .hero-bg-m {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: block;
+   
+  }
+
+  .hero-bg {
+    display: none;
+  }
+
+  .hero-content {
+    flex-wrap: wrap-reverse;
+    padding: 0px 50px;
+    justify-content: center;
+    align-content: center;
+    
+
+
+
+    .hero-text{
+      .hero-btn{
+        margin-top: 5vh;
+      }
+      h1{
+        
+        font-size: 18px;
+  
+      }
+      h2{
+     
+        font-size: 15px;
+      
+      }
+    }
+    
+  }
+  .behind-text{
+    display: none;
+  }
+  .hero-image{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+
+}
+
