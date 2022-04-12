@@ -44,11 +44,13 @@ min-height: 100vh;
     h1{
       color: $SloganColor;
       font-size: 3vw;
+      font-weight: 700;
     line-height: normal;
     }
     h2{
       color: $SloganColor;
       font-size: 2vw;
+      font-weight: 700;
       line-height: 0px;
     }
     .hero-btn{
@@ -95,12 +97,13 @@ min-height: 100vh;
       }
       h1{
         
-        font-size: 18px;
+        font-size: 25px;
+   
   
       }
       h2{
      
-        font-size: 15px;
+        font-size: 20px;
       
       }
     }
@@ -111,6 +114,8 @@ min-height: 100vh;
   }
   .hero-image{
     width: 100%;
+    text-align: center;
+    
     img{
       width: 100%;
     }

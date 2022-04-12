@@ -26,8 +26,8 @@ const MainNavigation = () => {
         
         <nav className="main-navigation__drawer-nav">
    
-         <img     src={MagmaLogo} alt='Magma'/>
- 
+         {/* <img     src={MagmaLogo} alt='Magma'/>
+  */}
  
           <NavLinks />
         </nav>

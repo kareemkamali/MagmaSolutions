@@ -1,7 +1,7 @@
 import React from 'react';
 import VisionImage from "../../assets/images/vision-section-pic.png";
 import VisionBackground from "../../assets/images/vision-section-bg.jpg";
-import VisionBackgroundMobile from "../../assets/images/MobileImages/VisionBg.jpg";
+import VisionBackgroundMobile from "../../assets/images/MobileImages/VisionBgMobile.png";
 import ArrouwImage from "../../assets/images/vision-section-arrow.png"
 const VisionSection = () => {
   return (
@@ -24,8 +24,7 @@ const VisionSection = () => {
                 </div>
                <div className='image-right-vision'>
 
-        
-                <img className='vision-image-right' src={VisionImage} alt='vision'/>
+            <img   src={VisionImage} alt='vision'/>
                 </div>
              
       

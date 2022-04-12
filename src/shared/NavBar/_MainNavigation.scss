@@ -1,15 +1,15 @@
 .main-content{
     width: 100%;
-    padding: 0 100px;
+    padding: 0 50px;
 
     display:flex;
-    justify-content: space-between;
+    // justify-content: space-around;
 
     align-items: center;
 
 }
 .logo{
-  
+
   
 
    img{
@@ -18,14 +18,15 @@
    }
 }
 .nav-bar{
-    padding: 0 0px;
+    
+    padding: 0 80px;
     display: flex;    
- 
+
 }
 .nav-links{
     list-style: none;
     margin: 0;
- 
+
  
     width: 100%;
     height: 100%;
@@ -33,21 +34,22 @@
   justify-content: space-between;
     align-items: center;
     li{
+  
         margin: 0 10px;
     }
     a{
         
         font-style: normal;
-        font-weight:800;
-        font-size: 1.3vw;
+        font-weight:600;
+        font-size: 1.1vw;
         color: $VioletColor;
         text-decoration: none;
-        padding: 0.5rem;
+        padding: 0.5vw;
       
     }
  a.active,a:active,a:hover{
         border-bottom:2px solid $OrangeColor;
-        font-weight: 600;
+        font-weight: 700;
     }
 
 }
@@ -67,33 +69,42 @@
         border: none;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin-right: 2rem;
+        float: right;
+    
         cursor: pointer;
+        z-index: 999;
         span {
             display: block;
+            z-index: 999;            
             width: 3rem;
             height: 2.5px;
-            background: linear-gradient(#7A4597,#ff7900)
-          }
+            background: linear-gradient(#7A4597,#ff7900);
+        }
+        span:nth-child(2){
+            width: 2rem;
+            margin-left: 10px;
+        }
       }
+   
     .nav-bar{
         display: none;
        
     }
-    .main-content{ .logo{
-        // display: none;
-        // width: 100px;       
-     
-        img{width: 100%;}
+    .main-content{
+       
+        .logo{
+        img{
+            
+            width: 100%;}
     }
 }
 .nav-links{
     min-height: 100vh;
         display: flex;
         flex-direction: column;
-   justify-content: space-around;
-        align-items: center;
+        justify-content: space-evenly;
         a{
             font-size:15px;
         }

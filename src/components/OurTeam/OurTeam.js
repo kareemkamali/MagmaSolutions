@@ -26,14 +26,14 @@ const OurTeam = () => {
 
      <div className='team-content'>
     <img src={person1} className='team-person-image'></img>
-    <h1>Web Developer</h1>
-    <h2>Lorem ipsum helo world what ever how is potato ya hala overpro</h2>
+    <h1>Mobile Developer</h1>
+    <h2>Lorem ipsum helo world wha sds sd sd s asas as sds st ever how is potato ya hala overpro</h2>
 
      </div>
      <img className='line-team' src={LineImage}/>
      <div className='team-content'>
     <img src={person1} className='team-person-image'></img>
-    <h1>Web Developer</h1>
+    <h1>CEO</h1>
     <h2>Lorem ipsum helo world what ever how is potato ya hala overpro</h2>
 
      </div>

@@ -19,7 +19,7 @@ const HomePage = () => {
   <OurProduct></OurProduct> 
    <OurTeam></OurTeam>
    <ContactUs></ContactUs>
- <Footer></Footer>
+ {/* <Footer></Footer> */}
  </>
   )
 }

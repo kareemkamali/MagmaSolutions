@@ -1,4 +1,4 @@
-import ServicesImage1 from '../../assets/images/services1.jpg';
+import ServicesImage1 from '../../assets/images/services1.png';
 import ServicesImage2 from '../../assets/images/servicespic2.png';
 import ServicesImage3 from '../../assets/images/servicespic3.png';
 import Servicebg1 from '../../assets/images/OurServices-bg.jpg';

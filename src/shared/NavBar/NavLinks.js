@@ -6,7 +6,7 @@ const NavLinks = () => {
     <ul className="nav-links">
    
     <li>
-      <NavLink to='/'  exact>
+      <NavLink to='/home-page'  >
          Home
       </NavLink>
     </li>
@@ -16,22 +16,22 @@ const NavLinks = () => {
       </NavLink>
     </li>
     <li>
-      <NavLink to='/products' exact>
+      <NavLink to='/products' >
          Products
       </NavLink>
     </li>
     <li>
-      <NavLink to='/our-team' exact>
+      <NavLink to='/our-team' >
          Our Team
       </NavLink>
     </li>
     <li>
-      <NavLink to='/about-us' exact>
+      <NavLink to='/about-us' >
          About Us
       </NavLink>
     </li>
     <li>
-      <NavLink to='/contact-us' exact>
+      <NavLink to='/contact-us' >
          Contact Us
       </NavLink>
     </li>

@@ -33,11 +33,11 @@ function App() {
       </div>
     }>
   <Switch>
-        <Route path="/"  >
+        <Route path="/"  exact>
           <Redirect to='/home-page'/>
       
         </Route>
-        <Route path="/home-page" exact>
+        <Route path="/home-page" exact >
         <HomePage></HomePage>
         </Route>
 

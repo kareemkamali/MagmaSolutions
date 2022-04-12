@@ -3,7 +3,7 @@
     width: 100%;  
 overflow-y: scroll;
    position: relative;
-  height:500px;
+  height:680px;
 
     min-height: calc(100vh );
 
@@ -18,40 +18,42 @@ overflow-y: scroll;
 }
 }
 .services-title{
-     padding:  0 100px;
-        font-size: 20px;
-        text-decoration:underline $OrangeColor ;
+
+     h1{
+         margin-top: 0;
+        font-size: 3vw;
+        font-weight: 600;
         color: $VioletColor;
-  
+        border-bottom: 2px solid $OrangeColor;
+        width: fit-content;
+     }
  
 }
 .services-section::-webkit-scrollbar{
-    // display: none;
+    display: none;
 }
 .services-container{
 
     display: flex;
     width: 100%;
     height: 100%;
-    // min-height: 100vh;
+ 
     justify-content: space-between;
     padding: 0 100px;
-
-
-
-
-
     .services-content{
-        width: 50%;
-      
-
+        padding-top: 21px;
+        width: 70%;
         position: relative;
         display: flex;
         flex-direction: column;
         .services-image{
             width: 80%;
-         
-            img{width: 100%;
+            
+            
+            box-shadow: 0px 4px 59px -17px #20242D;
+            img{
+               display: block;
+                width: 100%;
            }
         }
         .services-text{
@@ -59,7 +61,7 @@ overflow-y: scroll;
             
             
             h2{
-            
+            font-weight: 500;
                 font-size: 1vw;
             }
         }
@@ -69,7 +71,7 @@ overflow-y: scroll;
     }
     
     .services-right{
-        width: 40%;
+        width: 30%;
         display: flex;
     
         .scroll-image{
@@ -88,15 +90,18 @@ overflow-y: scroll;
          
           margin: auto auto;
          
-         h1{
-                    color: $VioletColor;
-                    font-size: 3vw;
-                    line-height: 2px;
+         h1{ 
+                   color: $VioletColorLight;
+                    font-size: 2vw;
+                    font-weight: 700;
+                
                 }
                 h2{
                     color: $OrangeColor;
                     line-height: 0;
                     font-size: 1vw;
+                    font-weight: 500;
+                    text-decoration: underline;
                 }
             
         }
@@ -115,93 +120,95 @@ overflow-y: scroll;
 
 @media screen and(max-width:1024px) {
     .services-title{
-    //  text-align: center;
-    padding: 0;
-    text-decoration: none;
- border-bottom: 2px solid $OrangeColor;
-     h1{
-         margin: 0;
-         font-size: 25px;
-         
-     }
+      margin: auto auto;
+        h1{
+          
+           font-size: 20px;
+  
+ 
+        }
     
    }
-   .services-bg{
-       display: none;
-   }
-
-    .services-container{
-    flex-direction: column-reverse;
-    justify-content: center;
-  min-height: 100vh;
-    padding: 0 0px;
-
-   
-    .services-content{
-     
+    .services-section{
+        width: 100%;  
+    overflow-y: hidden;
+    height: 100%;
+    .services-bg{
         width: 100%;
-        height: 100%;
+    
+      height: 100%;
+      min-height: 100%;
+        position: absolute;
+        
+}
 
-align-items: center;
+.services-container{
+
+flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 0 ;
+    .services-content{
+        padding-top: 21px;
+        width: 100%;
+        padding: 10px 50px;
         position: relative;
         display: flex;
         flex-direction: column;
+        
         .services-image{
             width: 100%;
-         
-            img{width: 100%;
-           }
+            
         }
         .services-text{
-            width: 100%;
-            
-            
-            h2{
-                color: $VioletColor;
-                font-size: 15px;
-            }
-        }
-}
-}
-
-
-.services-right{
- width: 100% !important;
-    display: flex;
-
-    .scroll-image{
-    display: none;
-      
-        }
-        .scroll-title{
-       
-     display: flex;
-     align-items: center;
-     justify-content:center;
-      
-     
-     h1{
-         
-             
-                font-size: 20px !important;
-            
-               
-            }
-            h2{
-             display: none;
-            }
         
+            h2{
+            font-weight: 500;
+                font-size: 10px;
+                margin: 0;
+            
+            }
+        }
+        
+
+
     }
-    }
-
-
-
-
-
-
-
-
-
-
-
+    
+    .services-right{
+        width: 100%;
+        display: flex;
+        padding: 0 50px;
+        .scroll-image{
+        display: none;
+          
+            }
+            .scroll-title{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+       
+         
+         h1{ 
+       
+                    font-size: 10px;
+             
+                
+                }
+                h2{
+            
+                    font-size: 8px;
+             
+                }
+            
+        }
+        }
+       
 }
+
+
+
+
+
+
+
+    }}

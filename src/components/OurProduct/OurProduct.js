@@ -16,7 +16,7 @@ console.log(document.getElementsByClassName('our-product'))
               <div className='product-title'>
                  <h1>Our Products</h1>
                     <Link>
-                             <h2>Learn More...</h2>
+                             <h2>View More...</h2>
                                                    </Link>
   </div>
   <div className='product-containe-wrapper'>
@@ -43,9 +43,7 @@ console.log(document.getElementsByClassName('our-product'))
 
 
 <div className='bottom-border'></div>
-<div className='product-viewall-m'>
-<Link>  <h2>View All...</h2>      </Link>
-</div>
+
 
     </div>
 
