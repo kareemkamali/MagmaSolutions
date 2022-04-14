@@ -5,7 +5,10 @@ $OrangeColor:#FF7900;
 $SloganColor:#20242D;
 $VioletColorLight:#7A4597;
 $HeroImage:"../assets/images/hero-bg.jpg";
-
+:root{
+  --firstburgerspan:0deg;
+  --secondburgerspan:0deg;
+}
 
 * {
   box-sizing: border-box;
@@ -18,4 +21,5 @@ html {
 body {
   margin: 0;
 font-family: 'Poppins',sans-serif;
+
 }

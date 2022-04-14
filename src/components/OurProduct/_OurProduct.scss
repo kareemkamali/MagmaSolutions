@@ -101,17 +101,23 @@ margin: 0 7px;
     .our-product{ 
         .product-title{
           padding: 0;
+          padding-top: 50px;
         // border-bottom:none;
         // justify-content: center;
 
          h1{
         
          font-size: 25px ;
+         font-weight: 700;
+     }
+     a{
+         text-decoration: underline $OrangeColor;
      }
     h2{
        
         font-size: 10px !important;
         color: $OrangeColor;
+        
     }
     }
 }
@@ -129,7 +135,7 @@ left: 0%;
            h1{
             
                color: $VioletColor;
-               font-size:20px !important;
+               font-size:20px ;
            }
            .product-image{
                width: 100%;

@@ -5,15 +5,50 @@ import NavLinks from './NavLinks';
 import { NavLink } from 'react-router-dom';
 import SideDrawer from './SideDrawer';
 import Backdrop from '../UiElement/Backdrop';
+
+import styled from '../../index.css';
 const MainNavigation = () => {
 
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
+  const transformBurgerspan1='40deg';
+
+
+const Logo={
+
+}
+
+
+useEffect(()=>{
+
+  if(drawerIsOpen){
+
+    document.documentElement.style.setProperty('--firstburgerspan','31deg');
+    document.documentElement.style.setProperty('--secondburgerspan','-31deg');
+  
+      }
+      else{
+  
+        document.documentElement.style.setProperty('--firstburgerspan','0deg');
+      document.documentElement.style.setProperty('--secondburgerspan','0deg');
+      }
+
+},[drawerIsOpen])
+
+
+
+
+
+
+
+
+
 
   const openDrawerHandler = () => {
-    setDrawerIsOpen(true);
+    setDrawerIsOpen(inverse =>!inverse);
   };
 
   const closeDrawerHandler = () => {
+
     setDrawerIsOpen(false);
   };
 
@@ -22,13 +57,10 @@ const MainNavigation = () => {
   return (
  <>
   {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
-      <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
+      <SideDrawer  show={drawerIsOpen} onClick={closeDrawerHandler}>
         
         <nav className="main-navigation__drawer-nav">
    
-         {/* <img     src={MagmaLogo} alt='Magma'/>
-  */}
- 
           <NavLinks />
         </nav>
       </SideDrawer>
@@ -43,8 +75,8 @@ const MainNavigation = () => {
    <div className='main-content'>
 
   
-     <div className='logo'>
-         <img src={MagmaLogo} alt='Magma'/>
+     <div style={{margin: drawerIsOpen?'12vw':0}}   className='logo'>
+         <img  src={MagmaLogo} alt='Magma'/>
      </div>
  
      <nav className='nav-bar'>
@@ -54,13 +86,14 @@ const MainNavigation = () => {
 
      </div>  
 
-     <button
+     <button  
           className="main-navigation__menu-btn"
           onClick={openDrawerHandler}
         >
           <span />
-          <span />
-          <span />
+      {!drawerIsOpen && <span />}
+      {drawerIsOpen && <span style={{'display':'none'}} />}
+          <span  />
         </button>
  </MainHeader>
  

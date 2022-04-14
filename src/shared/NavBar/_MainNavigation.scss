@@ -9,7 +9,7 @@
 
 }
 .logo{
-
+transition: all .5s ease-in ;
   
 
    img{
@@ -69,24 +69,48 @@
         border: none;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         margin-right: 2rem;
         float: right;
-    
+        position: absolute;
+        top: 5%;
+        right: 0;
+ 
         cursor: pointer;
         z-index: 999;
         span {
-            display: block;
-            z-index: 999;            
             width: 3rem;
-            height: 2.5px;
-            background: linear-gradient(#7A4597,#ff7900);
+            height: 0.25rem;
+            border-radius: 10px;
+            transition: all 0.3s linear;
+            position: relative;
+            transform-origin: 1px;
+            background: linear-gradient(to left,#20242D,#7A4597);
+        }
+        span:nth-child(1){
+            transform: rotate(var(--firstburgerspan));
+            
+            
+                        
         }
         span:nth-child(2){
-            width: 2rem;
+            width: 2.2rem;
+          
             margin-left: 10px;
+            
+            
         }
+        span:nth-child(3){
+            transform: rotate(var(--secondburgerspan));
+            
+            
+        }
+
+      
+        
+     
       }
+  
    
     .nav-bar{
         display: none;
@@ -101,11 +125,16 @@
     }
 }
 .nav-links{
-    min-height: 100vh;
+  min-height: 100vh;
+    
+   
+    justify-content: space-evenly;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+    padding: 0 ;
+ 
         a{
+            
             font-size:15px;
         }
       

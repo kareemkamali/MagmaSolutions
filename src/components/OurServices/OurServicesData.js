@@ -4,6 +4,16 @@ import ServicesImage3 from '../../assets/images/servicespic3.png';
 import Servicebg1 from '../../assets/images/OurServices-bg.jpg';
 import Servicebg2 from '../../assets/images/servicesBg2.jpg';
 
+import Servicebg1m from '../../assets/images/MobileImages/Services1Bg.png';
+import Servicebg2m from '../../assets/images/MobileImages/services2Bg.png';
+import Servicebg3m from '../../assets/images/MobileImages/Services3Bg.png';
+
+
+
+
+
+
+
 import Line1 from '../../assets/images/Line.png';
 
 import Line2 from '../../assets/images/Line2.png';
@@ -13,7 +23,9 @@ const DUMMY_SERVICES=[
     {
         id:'services1',
         bgImage:Servicebg1,
+        bgImageMobile: Servicebg1m,
         serviceImage:ServicesImage1,
+
         imageLine:Line1,
         textColor:'#683385',
         title:'Development',
@@ -22,6 +34,7 @@ const DUMMY_SERVICES=[
     {
         id:'services2',
         bgImage:Servicebg2,
+        bgImageMobile: Servicebg2m,
         serviceImage:ServicesImage2,
         textColor:'#fff',
         title:'Design',
@@ -32,6 +45,7 @@ const DUMMY_SERVICES=[
     {
         id:'services3',
         bgImage:Servicebg1,
+        bgImageMobile: Servicebg3m,
         serviceImage:ServicesImage3,
         textColor:'#683385',
         title:'Digital Marketing',

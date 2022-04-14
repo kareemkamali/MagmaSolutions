@@ -14,9 +14,12 @@ const OurServices = () => {
 
 {DUMMY_SERVICES.map((services)=>(
 <>
+
 <img key={services.id} className='services-bg' src={services.bgImage}/>
+<img key={services.id} className='services-bg-m' src={services.bgImageMobile}/>
 
 <div className='services-container'>
+
     <div className='services-content'>
     {services.id=='services1' &&
 <div className='services-title'>
@@ -36,12 +39,18 @@ const OurServices = () => {
      </div>
 
      <div className='services-right'>
+         
+     {services.id=='services1' &&
+<div className='services-title-m'>
+    <h1>Our Services</h1>
+    </div>
+ }
  <div className='scroll-image'>
      <img src={services.imageLine}/>
  </div>
  <div className='scroll-title'>
-     <h1>{services.title}</h1>
-     <h2>View More...</h2>
+     <h1 style={{'color':`${services.textColor}`}}>{services.title}</h1>
+     <h2>Learn More...</h2>
  </div>
          
          
