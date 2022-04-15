@@ -1,168 +1,138 @@
-.contact-section{
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
+.contact-section {
+    @include Section;
+    .contact-background {
+        @include Background;
+    }
+    .contact-container {
+        @include Section;
+        @include ContainerFlex(space-between)
+    }
+
+}
+
+// form conatiner
+.contact-form {
     position: relative;
+    width: 60%;
 
+    // title are you ready...
+    h1 {
 
-     .contact-background{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
-    .contact-container{
-        width: 100%;
-        height: 100%;
-        min-height: 100vh;
-        display: flex;
-        padding: 0 100px;
-        justify-content: space-between;
-      
-
-
-    }
-   
-}
-
-.contact-form{    
-  position: relative;
-width: 60%;
-    h1{
-       
         margin: 0;
-        font-size:2.7vw;
+        font-size: 2.7vw;
         color: $OrangeColor;
-        
+
     }
 }
-.spins{
+
+// spins circle corner
+.spins {
+
     position: relative;
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
-    .spin{
+
+    .spin {
         border-radius: 50%;
         width: 20px;
         height: 20px;
         background-color: $OrangeColor;
-        border:2px solid $VioletColor
+        border: 2px solid $VioletColor
     }
 }
-.form-content{
+
+.form-content {
     display: flex;
     flex-direction: column;
     padding: 0 10px;
-    .form-title{
-        display: flex;
-padding: 0 20px;
-align-items: center;
 
-        img{
+    // contact us
+    .form-title {
+        display: flex;
+        padding: 0 20px;
+        align-items: center;
+// image paper fly
+        img {
             position: relative;
             z-index: 999;
             width: 25%;
-       
+
         }
-        h1{
-            
-            color: $VioletColor;
-            font-size:3vw;
-            line-height: 0;
+
+        //contact us text
+        h1 {
+
+            @include Title(2vw)
         }
     }
 }
-.btn-contactUs{
- 
+
+// btn div container
+.btn-contactUs {
+
     text-align: center;
 }
 
+.contact-image {
+    z-index: 999;
+    display: flex;
+    height: 50%;
+    justify-content: end;
+    // width: 50%;
 
-
-
-
-
-.contact-image{
-z-index: 999;
-display: flex;
-height: 50%;
-justify-content: end;
-// width: 50%;
-
-img{
-position: relative;
-width:80%;
-}
+    img {
+        position: relative;
+        width: 80%;
+    }
 
 }
 
 
 @media screen and(max-width:1024px) {
- 
-    .contact-section{
-     .contact-container{
-      
+
+    .contact-section {
+        .contact-container {
             flex-wrap: wrap-reverse;
-          padding: 50px 10px; 
-        
-    
-    
+            padding: 50px 10px;
+
         }
     }
 
 
-    .contact-form{    
-      position: relative;
-    width: 100%;
-        h1{
-          text-align: center;
-            font-size:25px;
-          
-          
-            
-        }
-    }
-    .form-content{
-      
-        .form-title{
-            display: flex;
-    padding: 0 20px;
-    
-    
-            img{
-             
-                width: 30%;
-           
-            }
-            h1{
-            
-                
-           
-                font-size:25px;
-             
-            }
-        }
-    }
-  
-    
-    .contact-image{
-      padding: 0 10px;
-        justify-content: center;
-        // width: 50%;
-        
-        img{
+    .contact-form {
         position: relative;
-        width:100%;
+        width: 100%;
+
+        h1 {
+            text-align: center;
+            font-size: 25px;
         }
-        
+    }
+
+    .form-content {
+
+        .form-title {
+            display: flex;
+            padding: 0 20px;
+            img {
+                width: 30%;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
         }
-    
-    
-    
-    
+    }
 
+    .contact-image {
+        padding: 0 10px;
+        justify-content: center;
 
+        img {
+            position: relative;
+            width: 100%;
+        }
 
-
-
+    }
 }

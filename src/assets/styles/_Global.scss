@@ -1,14 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-// Colors Variable 
-$VioletColor:#683385;
-$OrangeColor:#FF7900;
-$SloganColor:#20242D;
-$VioletColorLight:#7A4597;
-$HeroImage:"../assets/images/hero-bg.jpg";
-:root{
-  --firstburgerspan:0deg;
-  --secondburgerspan:0deg;
-}
 
 * {
   box-sizing: border-box;
@@ -23,3 +13,70 @@ body {
 font-family: 'Poppins',sans-serif;
 
 }
+// Colors Variable 
+$VioletColor:#683385;
+$OrangeColor:#FF7900;
+$SloganColor:#20242D;
+$VioletColorLight:#7A4597;
+$HeroImage:"../assets/images/hero-bg.jpg";
+
+// ==============Rotate Burger Nav To X=============
+:root{
+  --firstburgerspan:0deg;
+  --secondburgerspan:0deg;
+}
+
+
+//====================Mixin Library==========================
+
+//all sections
+@mixin Section {
+  width: 100%;
+  height:100%;
+  min-height: 100vh;
+  position: relative;  
+}
+// all bg
+@mixin Background {
+  position: absolute;
+  // top: 0;
+  // left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: block;
+  
+}
+// all Container in section
+@mixin ContainerFlex ($justifyContent) {
+  display: flex;
+  justify-content:$justifyContent ;
+  align-items: center;
+  padding: 0 100px;
+  
+}
+// all title
+@mixin Title ($size) {
+  color: $VioletColor;
+  font-size:$size;
+  font-weight: 700;
+  margin: 0;
+  
+}
+// all text inside container
+@mixin Text($size) {
+
+      color: $VioletColor;
+        font-size: $size;
+        font-weight: 500;
+}
+// Image With Border Radius
+
+@mixin ImageWithBorder($borderRadius) {
+  width: 100%;
+  border-radius: $borderRadius;
+-webkit-border-radius:$borderRadius;
+-moz-border-radius:$borderRadius;
+-o-border-readius:$borderRadius
+}
+

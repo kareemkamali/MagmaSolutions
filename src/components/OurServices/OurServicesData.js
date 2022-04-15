@@ -21,7 +21,7 @@ import Line3 from '../../assets/images/Line3.png';
 const DUMMY_SERVICES=[
 
     {
-        id:'services1',
+        id:1,
         bgImage:Servicebg1,
         bgImageMobile: Servicebg1m,
         serviceImage:ServicesImage1,
@@ -32,7 +32,7 @@ const DUMMY_SERVICES=[
         text:'Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegng. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum.. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns.'
     },
     {
-        id:'services2',
+        id:2,
         bgImage:Servicebg2,
         bgImageMobile: Servicebg2m,
         serviceImage:ServicesImage2,
@@ -43,7 +43,7 @@ const DUMMY_SERVICES=[
         
     },
     {
-        id:'services3',
+        id:3,
         bgImage:Servicebg1,
         bgImageMobile: Servicebg3m,
         serviceImage:ServicesImage3,

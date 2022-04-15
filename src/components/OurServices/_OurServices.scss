@@ -1,247 +1,240 @@
-
-.services-section{
-    width: 100%;  
-overflow-y: scroll;
-   position: relative;
-  height:680px;
-
-    min-height: calc(100vh );
-
-
- .services-bg{
+// services sections has height default because we needed to overflow 
+.services-section {
+    overflow-y: scroll;
+    position: relative;
     width: 100%;
-display: block;
-  height: calc(100% / 3);
-  min-height: calc(100vh + 100px);
-    position: absolute;
-    z-index: -1;
+    height: 100px;
+    min-height: 100vh;
+
+    .services-bg {
+        @include Background;
+        min-height: calc(100vh + 20px);
+    }
+
+    .services-bg-m {
+        display: none;
+    }
 }
 
-
-.services-bg-m{
-    display: none;
-}
-}
-.services-title{
-
-     h1{
-         margin-top: 0;
-        font-size: 3vw;
-        font-weight: 600;
-        color: $VioletColor;
+// title of Section
+.services-title {
+    h1 {
+        @include Title(3vw);
         border-bottom: 2px solid $OrangeColor;
         width: fit-content;
-     }
- 
+    }
 }
-.services-section::-webkit-scrollbar{
+
+// remove the scrollbar default
+.services-section::-webkit-scrollbar {
     display: none;
 }
-.services-container{
 
-    display: flex;
+//container of each services
+.services-container {
     width: 100%;
     height: 100%;
- 
-    justify-content: space-between;
-    padding: 0 100px;
-    .services-content{
-        padding-top: 21px;
+
+    @include ContainerFlex(space-between);
+    align-items: flex-start;
+
+    //services content left side
+    .services-content {
+        padding-top: 20px;
         width: 70%;
         position: relative;
         display: flex;
         flex-direction: column;
-        .services-image{
+
+        .services-image {
             width: 80%;
-            
-            
-            box-shadow: 0px 4px 59px -17px #20242D;
-            img{
-               display: block;
-                width: 100%;
-           }
-        }
-        .services-text{
-            width: 100%;
-            
-            
-            h2{
-            font-weight: 500;
-                font-size: 1vw;
+            padding-top: 10px;
+
+            img {
+                @include ImageWithBorder(0);
+                display: block;
+                box-shadow: 0px 4px 30px #20242D;
             }
         }
-        
+
+
+        //text bellow The images on the left Side
+        .services-text {
+            width: 100%;
+
+
+            h2 {
+            font-size: 1vw;
+            font-weight: 500;
+
+            }
+        }
+
 
 
     }
-    
-    .services-right{
+
+    // The right side when the scrolling and The title of each sercvices
+
+    .services-right {
         width: 30%;
+        padding-top: 0px;
         display: flex;
-        .services-title-m{
+        min-height: 100vh;
+
+        // title on Mobile when change The place
+        .services-title-m {
             display: none;
         }
-        .scroll-image{
-           
+
+        // Line Scrolling between services right and left
+        .scroll-image {
             width: 15%;
-            height: 100%;
-            min-height: 100vh;
-            img{
+
+            img {
                 height: 100%;
+                min-height: 100vh;
                 width: 100%;
             }
-          
+        }
+
+        //title of each services
+        .scroll-title {
+            width: 100%;
+            margin: auto auto;
+
+            h1 {
+                color: $VioletColorLight;
+                font-size: 2vw;
+                font-weight: 700;
+
             }
-            .scroll-title{
-                width: 100%;
-         
-          margin: auto auto;
-         
-         h1{ 
-                   color: $VioletColorLight;
-                    font-size: 2vw;
-                    font-weight: 700;
-                
-                }
-                h2{
-                    color: $OrangeColor;
-                    line-height: 0;
-                    font-size: 1vw;
-                    font-weight: 500;
-                    text-decoration: underline;
-                }
-            
+
+            h2 {
+                @include Text(1vw);
+                text-decoration: underline;
+            }
         }
-        }
-       
+    }
+
 }
 
-
-
-
-
-
-
-
-
+//====================Mobile ResPonsivee=================
 
 @media screen and(max-width:1024px) {
 
-
-
-    .services-title{
-      display: none;
-    
-   }
-    .services-section{
-        width: 100%;  
-    overflow-y: hidden;
-    height: 100%;
-    .services-bg{
-       display: none;
-        
-}
-.services-bg-m{
-    width: 100%;
-    display: block;
-
-  height: calc(100% / 3);
-  min-height: calc(100vh + 100px);
-    position: absolute;
-    z-index: -1;
-}
-
-.services-container{
-
-flex-direction: column-reverse;
-    justify-content: space-between;
-    padding: 0 ;
-    .services-content{
-        padding-top: 21px;
-        width: 100%;
-        padding: 0px 10px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        
-        .services-image{
-            width: 100%;
-            
-        }
-        .services-text{
-        padding-top: 30px;
-            h2{
-            font-weight: 500;
-                font-size: 15px;
-                margin: 0;
-            
-            }
-        }
-        
-
-
-    }
-    
-    .services-right{
-        width: 100%;
-        display: flex;
-        padding: 0 10px;
-        flex-wrap: wrap;
-        .scroll-image{
+    // remove title and make another title at the top
+    .services-title {
         display: none;
-            }
-            .scroll-title{
-                padding-top: 30px;
-                width: 100%;
-                display: flex;
-                align-items: flex-end;
-                justify-content: space-between;
-       
-         
-         h1{ 
-       
-                    font-size: 20px;
-             
-                
-                }
-                h2{
-            
-                    font-size: 15px;
-             
-                }
-            
-        }
-        .services-title-m{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 2px solid $OrangeColor;
-            width: 100%;
-            
-            h1{
-              
-               font-size: 25px;
-               color: $VioletColor;
-               margin: 0;
-               font-weight: 700;
-               padding-top: 30px;
-      
-     
-            }
-            
-        }
-        }
-       
-}
-
-
-
-
-
-
 
     }
 
+    //convert section to 100% of height
+    .services-section {
+        width: 100%;
+        overflow-y: hidden;
+        height: 100%;
+        min-height: 100%;
+
+        //change The background
+        .services-bg {
+            display: none;
+
+        }
+
+        .services-bg-m {
+            @include Background;
+            
+            min-height: calc(100%);
+        }
+
+        //container reverse the column to make right side on the top pf the left side
+        .services-container {
+
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            padding: 0;
+            min-height: 100%;
 
 
+            // make content 100% width and give some padding like all mobile version 10px
+            .services-content {
+                padding-top: 21px;
+                width: 100%;
+                padding: 0px 10px;
+min-height: 100%;
+                //imgae get full width of contennt
+                .services-image {
+                    width: 100%;
+
+                }
+
+                //text like all text but making padding to down 20px from image
+                .services-text {
+                    padding-top: 20px;
+
+                    h2 {
+               font-size: 15px;
+               font-weight: 500;
+                    }
+                }
+
+
+
+            }
+
+            //services wirte has title and learn More maked wrapp and convert to 100%
+            .services-right {
+                width: 100%;
+
+                padding: 0 10px;
+                flex-wrap: wrap;
+                min-height: 100%;
+
+                //scroll bar removed
+                .scroll-image {
+                    display: none;
+                }
+
+                //title and learn more makes space betweeen them and align irem end 
+                .scroll-title {
+
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+
+                    h1 {
+                        font-size: 20px;
+                    }
+
+                    h2 {
+
+                        font-size: 15px;
+
+                    }
+
+                }
+
+                // services title on mobile and maked on center with underline
+                .services-title-m {
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+
+
+                    h1 {
+
+                        @include Title(25px);
+                        padding-top: 30px;
+                        border-bottom: 2px solid $OrangeColor;
+
+                    }
+
+                }
+            }
+        }
+    }
 }

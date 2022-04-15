@@ -10,14 +10,16 @@ const HeroSection = () => {
 
         <div className="hero-section">
         <img className="hero-bg" src={HeroBackground}/>
+        {/* mobile change bg */}
         <img className="hero-bg-m" src={HeroBackgroundMobile}/>
+    
         <div className="hero-content">
           <img className='behind-text' src={TextImage}></img>
         <div className='hero-text'>
               <h1>Only One Creative way</h1>
               <h2>To Do Things Perfectly ...</h2>
               <div className='hero-btn'>
-              <Button size='big' >Get A Quote</Button>
+              <Button to='/home' size='big' >Get A Quote</Button>
               </div></div>
             <div className='hero-image'> <img src={HeroImage} alt=""/></div>
         </div>

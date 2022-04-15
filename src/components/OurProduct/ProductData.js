@@ -1,9 +1,6 @@
 import ProductImage1 from '../../assets/images/product1.png';
 import ProductImage2 from '../../assets/images/product2.png';
 import ProductImage3 from '../../assets/images/product3.png';
-import ProductImage4 from '../../assets/images/product4.png';
-
-
 
 
 const DUMMY_PRODUCT=[
@@ -19,7 +16,7 @@ const DUMMY_PRODUCT=[
         text:'mercury Template' 
     },
     {
-        id:'product3',
+        id:'product4',
         image:ProductImage3,
         text:'venus Template' 
     },   {

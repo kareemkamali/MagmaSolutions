@@ -1,77 +1,65 @@
-.team-section{
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    position: relative;
+.team-section {
+    @include Section;
 
-    .team-background{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-z-index: -1;    }
-
-.team-title{
-    width: 100%;
-    padding: 40px 100px;
-        h1{
-            margin: 0;
-            text-align: center;
-            color: $VioletColor;
-            font-weight:bolder;
-            font-size:3vw;
-            font-weight: 600;
-            border-bottom:2px solid $OrangeColor
-        }
-    
+    .team-background {
+        @include Background
     }
-.team-container{
-    display:flex;
-    width:100%;
-    height:500px;
-    
-    position:relative;
-   padding: 0px 40px;
-   justify-content: space-between;
 
-   .team-content{
-       height: 100%;
-       width: 30%;
-   
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-       
-  
-       h1{
-           margin: 0 ;
-         
-           text-align: center;
-           color: $VioletColorLight;
-           font-size: 1.5vw;
-           font-weight: 600;
-       }
-       h2{
-           margin: 0;
-         font-weight: 500;
-           color: $OrangeColor;
-           font-size: 1vw;
-         
-       }
-       img{
-           width: 60%;
-     
-           border-radius: 50%;
-           object-fit: cover;
-       }
-      
-   }
-   .line-team{
+    .team-title {
+        width: 100%;
+        padding: 40px 100px;
 
-   
-}
-}
+        h1 {
+            @include Title(3vw);
+            text-align: center;
+            border-bottom: 2px solid $OrangeColor
+        }
+
+    }
+
+    .team-container {
+        @include ContainerFlex(space-between);
+        width: 100%;
+        height: 500px;
+
+
+        .team-content {
+            height: 100%;
+            width: 27%;
+
+            text-align: center;
+            @include ContainerFlex(space-around);
+            padding: 0;
+            flex-direction: column;
+
+            // title below image
+            h1 {
+                margin: 0;
+                text-align: center;
+                color: $VioletColorLight;
+                font-size: 1.5vw;
+                font-weight: 600;
+            }
+
+            //text below each image
+            h2 {
+                @include Text(1vw);
+                color: $OrangeColor;
+            }
+
+            img {
+                @include ImageWithBorder(50px);
+                object-fit: cover;
+            }
+
+        }
+
+        //line between each employee
+        .line-team {
+
+            width: .5%;
+        }
+    }
 
 
 
@@ -79,69 +67,69 @@ z-index: -1;    }
 }
 
 @media screen and(max-width:1024px) {
-    .team-section{
+    .team-section {
         min-height: 100%;
-    
-    .team-title{
-      
-            h1{
-               
-                font-size:25px;
+
+        .team-title {
+
+            h1 {
+
+                font-size: 25px;
                 font-weight: 700;
-                
-               
+
+
             }
-        
+
         }
-    .team-container{
-        display:flex;
-        width:100%;
-        height:100%;
-     flex-direction: column;
-        position:relative;
-       padding: 0px 10px;
-       justify-content: center;
-       align-items: center;
-    
-       .team-content{
-           height: 100%;
-padding-top: 20px;
-width: 100%;
-        flex-direction: column;
-        align-items: center;
-        
-           
-      
-           h1{
-             
-               font-size: 15px;
-            
-           }
-           h2{
-               margin: 0;
-             font-weight: 500;
-               color: $OrangeColor;
-               font-size: 13px;
-             
-           }
-           img{
-               width: 70%;
-         
-               border-radius: 50%;
-               object-fit: cover;
-           }
-          
-       }
-       .line-team{
-    display: none;
-       
-    }
-    }
-    
-    
-    
-    
+
+        .team-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            position: relative;
+            padding: 0px 10px;
+            justify-content: center;
+            align-items: center;
+
+            .team-content {
+                height: 100%;
+                padding-top: 20px;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+
+                h1 {
+                    font-size: 15px;
+                }
+
+                h2 {
+                    margin: 0;
+                    font-weight: 500;
+                    color: $OrangeColor;
+                    font-size: 13px;
+
+                }
+
+                img {
+                    width: 70%;
+
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+            }
+
+            .line-team {
+                display: none;
+
+            }
+        }
+
+
+
+
     }
 
-    
+
 }

@@ -1,24 +1,19 @@
+
+// all section include all details
 .vision-section{
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    position: relative;
+@include Section;
     display: flex;
     flex-direction: column; 
     align-items: center;
  .vision-image{
-    width: 100%;
-    height: 100%;
-
-    position: absolute;
-    z-index: -1;
+ @include Background
 }
  .vision-image-m{
     display: none;
 }
+ // flesh end of section fo to services
 .arrow-services{
     text-align: center;
-   
  h1{
      margin: 0;
      color: $VioletColor;
@@ -28,32 +23,22 @@
      
      width: 10%;
  }
- 
-
 }
-
 }
+// Titile Magma Solutions
 .vision-title{
-  
-
     text-align: center;
     position: relative;
-    padding-top: 10px;
-
-    
-
+    padding-top: 20px;
     h1{
-        
-        color: $VioletColor;
-        font-size:3vw;
-        font-weight: 600
+ @include Title(3vw)
     }
+    // sub Title we Take Your
     h2{
         line-height: 0;
         color: $OrangeColor;
         font-size: 3vw;
         font-weight: bolder;
-       
     }
 }
 .vision-container{
@@ -62,46 +47,33 @@
     margin: auto auto;
     display: flex;
   justify-content: space-between;
-    // align-items: flex-start;
-
+    
+// text left container
     .vision-text{
         padding: 0px 50px;
-width: 40%;
+
         h1{
- 
-            color: $VioletColor;
-        font-size: 1vw;
-        font-weight: 500;
+        @include Text(1vw);
         }
         width: 50%;
 
     }
+// image right container
     .image-right-vision{
         width: 50%;
         img{
-         
-            box-shadow: -8px 0px 44px rgba(255, 121, 0, 0.66);;
-            border-radius: 50px; 
-            width: 100%;
-        
-        }
-    }
+            box-shadow: -7px 2px 20px rgba(255, 121, 0, 0.66);;
+           @include ImageWithBorder(50px);    
+        } }
 
 }
 
 
 @media screen and(max-width:1024px) {
-
-    .vision-section{
-  min-height: 100%;
-    
-    
+        .vision-section{
+          min-height: 100%;
         .vision-image-m{
-     position: absolute;
-    display: block;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
+     @include Background;
    
     }
     .vision-image{
@@ -109,24 +81,13 @@ width: 40%;
     }
 }
 
-
- 
- 
-
-
-
+//Magma solutions
     .vision-title{
         position: relative;
-padding-top: 40px;       
-margin-left: 11px;
-        
-    
+        padding-top: 40px;          
+        margin-left: 11px;
         h1{
-            margin: 0;
-            color: $VioletColor;
-            font-size:25px;
-            font-weight: 700;
-            line-height: normal;
+     @include Title(25px);
         }
         h2{
         font-size: 15px;
@@ -146,27 +107,14 @@ align-items: center;
 width: 100%;
 padding-top: 30px;
 padding: 0;
-
-           h1{
-               
-   font-size:15px;
+//change size text to 15px
+           h1{       
+          font-size:15px;
            }
-         
-   
        }
        .image-right-vision{
        width: 80%;
-       
-       text-align: center;
-           img{
-               width: 100%;
-           }
        }
-
-
-
-
-
     }
     .arrow-services{
         display: none;

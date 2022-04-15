@@ -1,63 +1,36 @@
-import React, { useRef } from 'react'
-import ServicesBackground from "../../assets/images/OurServices-bg.jpg";
-import ServicesImage1 from "../../assets/images/services1.jpg";
-import LineScroll from "../../assets/images/Line.png";
+import React from 'react'
 import DUMMY_SERVICES from '../OurServices/OurServicesData';
+import { Link } from 'react-router-dom';
+import ServicesList from './ServicesList';
 const OurServices = () => {
-    const ourServicesRef=useRef();
+
  
   return (
   <>
   <section id='services'>
 
    <div className='services-section'>
-
+{/* dummy array with map to fetch all details of each services  */}
 {DUMMY_SERVICES.map((services)=>(
-<>
 
-<img key={services.id} className='services-bg' src={services.bgImage}/>
-<img key={services.id} className='services-bg-m' src={services.bgImageMobile}/>
+(<React.Fragment key={services.id}>
+{/* change background for Mobiles */}
+<ServicesList
 
-<div className='services-container'>
+id={services.id}
+serviceImage={services.serviceImage}
+textColor={services.textColor}
+text={services.text}
+imageLine={services.imageLine}
+bgImage={services.bgImage}
+title={services.title}
+bgImageMobile={services.bgImageMobile}
+>
 
-    <div className='services-content'>
-    {services.id=='services1' &&
-<div className='services-title'>
-    <h1>Our Services</h1>
-    </div>
- }
-   
+</ServicesList>
+</React.Fragment>
+)
 
-    <div className='services-image'>
-        <img src={services.serviceImage}/>
-    </div>
-    <div style={{'color':`${services.textColor}`}} className='services-text'>
-        <h2>{services.text} </h2>
-    </div>
-    
-    
-     </div>
-
-     <div className='services-right'>
-         
-     {services.id=='services1' &&
-<div className='services-title-m'>
-    <h1>Our Services</h1>
-    </div>
- }
- <div className='scroll-image'>
-     <img src={services.imageLine}/>
- </div>
- <div className='scroll-title'>
-     <h1 style={{'color':`${services.textColor}`}}>{services.title}</h1>
-     <h2>Learn More...</h2>
- </div>
-         
-         
-         </div>
-
-</div>
-</>
 ))}
 
 

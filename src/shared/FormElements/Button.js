@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 const Button = props => {
-  console.log(props.size);
+
   if (props.href) {
     return (
       <a
