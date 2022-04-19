@@ -1,6 +1,7 @@
 // import HomePage from "./pages/HomePage";
-import React, { Suspense } from 'react';
-
+import React, { Suspense, useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   BrowserRouter as Router,
   Route,
@@ -24,6 +25,14 @@ const ProductPage = React.lazy(() => import('./pages/ProductPage'));
 
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration:1000,
+      delay:4000
+    });
+    AOS.refresh();
+  
+  });
   return (
   <>
   <Router>

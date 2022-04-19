@@ -34,14 +34,13 @@
 .services-container {
     width: 100%;
     height: 100%;
-
     @include ContainerFlex(space-between);
     align-items: flex-start;
 
     //services content left side
     .services-content {
         padding-top: 20px;
-        width: 70%;
+        width: 100%;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -53,7 +52,7 @@
             img {
                 @include ImageWithBorder(0);
                 display: block;
-                box-shadow: 0px 4px 30px #20242D;
+           
             }
         }
 
@@ -107,13 +106,38 @@
                 color: $VioletColorLight;
                 font-size: 2vw;
                 font-weight: 700;
+                margin: 0
 
             }
 
             h2 {
-                @include Text(1vw);
+                @include Text(.7vw);
                 text-decoration: underline;
+                color: $OrangeColor;
+                margin: 0;
+                display: flex;
+                align-items: center;
+
+                svg{
+                
+                    width: 20px;
+                    height: 20px;
+                polyline{
+                 
+                    fill: $OrangeColor;
+                    stroke: $OrangeColor;
+                    
+                }
             }
+              
+            }
+
+            h2:hover{
+               transition: all .5s ease-in;
+               padding-left: 5px;   
+            }
+
+        
         }
     }
 

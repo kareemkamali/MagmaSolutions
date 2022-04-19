@@ -4,8 +4,8 @@ const Spins = () => {
 
   return (
 <div className='spins'>
-                 <div className='spin'></div> 
-                 <div className='spin'></div>
+                 <div className='spin'>M</div> 
+                 <div className='spin'>M</div>
               </div>
   )
 }

@@ -2,6 +2,7 @@
     @include Section;
     .contact-background {
         @include Background;
+       
     }
     .contact-container {
         @include Section;
@@ -38,7 +39,19 @@
         width: 20px;
         height: 20px;
         background-color: $OrangeColor;
-        border: 2px solid $VioletColor
+        border: 2px solid $VioletColor;
+    text-align: center;
+        animation: rotatespin 5s infinite;
+
+        @keyframes rotatespin {
+            0%{
+                transform: rotate(-360deg);
+
+            }
+            
+            
+        }
+        
     }
 }
 

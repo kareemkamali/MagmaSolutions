@@ -2,6 +2,25 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 
 const NavLinks = () => {
+
+const ContactScroll=()=>{
+
+  window.scrollTo({
+    top:3270,
+    behavior:"smooth"
+  })
+
+}
+const TeamScroll=()=>{
+
+  window.scrollTo({
+    top:2600,
+    behavior:"smooth"
+  })
+
+}
+
+
   return (
     <ul className="nav-links">
    
@@ -21,7 +40,7 @@ const NavLinks = () => {
       </NavLink>
     </li>
     <li>
-      <NavLink to='/our-team' >
+      <NavLink to='//' onClick={TeamScroll} >
          Our Team
       </NavLink>
     </li>
@@ -31,9 +50,12 @@ const NavLinks = () => {
       </NavLink>
     </li>
     <li>
-      <NavLink to='/contact-us' >
+      <NavLink to='//' 
+      onClick={ContactScroll} >
          Contact Us
       </NavLink>
+
+     
     </li>
     </ul>
   )

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import bakcgroundImage from "../../assets/images/contact-section-bkg.png";
 //2e2lob background 
 import Card from '../../shared/UiElement/Card';
@@ -27,9 +27,9 @@ const ContactUs = () => {
 
             {/* form */}
             <div className='contact-form'>
-              <h1>Are You Ready To Grow?</h1>
+              <h1 data-aos="fade-down" >Are You Ready To Grow?</h1>
               {/* Card of white bg */}
-              <Card>
+              <Card  dataaos="fade-up">
                 <div className='form-container-contact'>
                   {/* spins the circle at corner form */}
                   <Spins />
@@ -90,7 +90,7 @@ const ContactUs = () => {
 
             </div>
             {/* Image right container */}
-            <div className='contact-image'>
+            <div data-aos="zoom-in" className='contact-image'>
               <img src={contactImage} alt='contact-image' />
             </div>
 
