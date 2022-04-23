@@ -63,8 +63,9 @@ transition: all .5s ease-in ;
 }
   @media (max-width: 1024px) {
     .main-navigation__menu-btn {
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+    
+        height: 2rem;
         background: transparent;
         border: none;
         display: flex;
@@ -79,7 +80,7 @@ transition: all .5s ease-in ;
         cursor: pointer;
         z-index: 999;
         span {
-            width: 3rem;
+            width: 2rem;
             height: 0.25rem;
             border-radius: 10px;
             transition: all 0.3s linear;
@@ -94,9 +95,8 @@ transition: all .5s ease-in ;
                         
         }
         span:nth-child(2){
-            width: 2.2rem;
-          
-            margin-left: 10px;
+            width: 1.2rem;
+            margin-left: .8rem;
             
             
         }
@@ -121,18 +121,18 @@ transition: all .5s ease-in ;
         .logo{
         img{
             
-            width: 100%;}
+            width: 50%;}
     }
 }
 .nav-links{
-  min-height: 100vh;
-    
-   
-    justify-content: space-evenly;
+  min-height: 50vh;
+   align-items: center;
+
+    justify-content:space-between;
+    padding-top: 100px;
         display: flex;
         flex-direction: column;
-    padding: 0 ;
- 
+
         a{
             
             font-size:15px;

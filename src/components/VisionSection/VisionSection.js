@@ -15,7 +15,7 @@ const VisionSection = () => {
           <img className='vision-image-m' src={VisionBackgroundMobile} alt="vision-bkg"></img>
 
           <div className='vision-title'>
-            <h1>MAGMA SOLUTIONS</h1>
+            <h1>Magma Solutions</h1>
             <h2  data-aos="fade-up">We Take Your business To Digital World</h2>
           </div>
                       {/* container has text and images */}

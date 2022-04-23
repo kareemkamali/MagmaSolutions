@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import ProductImageBackground from "../../assets/images/product-bg.jpg";
+import ProductImageBackground from "../../assets/images/product-bg.png";
 import DUMMY_PRODUCT from './ProductData';
 import ScrollContainer from 'react-indiana-drag-scroll'
 const OurProduct = () => {

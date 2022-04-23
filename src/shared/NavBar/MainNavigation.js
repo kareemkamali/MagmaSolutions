@@ -2,102 +2,75 @@ import React, { useEffect, useState } from 'react'
 import MainHeader from './MainHeader'
 import MagmaLogo from '../../assets/images/Magma-logo.png';
 import NavLinks from './NavLinks';
-import { NavLink } from 'react-router-dom';
 import SideDrawer from './SideDrawer';
 import Backdrop from '../UiElement/Backdrop';
+import { Link } from 'react-router-dom';
 
-import styled from '../../index.css';
+
 const MainNavigation = () => {
 
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
-  const transformBurgerspan1='40deg';
 
+  useEffect(() => {
 
-const Logo={
+    if (drawerIsOpen) {
 
-}
+      document.documentElement.style.setProperty('--firstburgerspan', '31deg');
+      document.documentElement.style.setProperty('--secondburgerspan', '-31deg');
 
+    }
+    else {
 
-useEffect(()=>{
+      document.documentElement.style.setProperty('--firstburgerspan', '0deg');
+      document.documentElement.style.setProperty('--secondburgerspan', '0deg');
+    }
 
-  if(drawerIsOpen){
-
-    document.documentElement.style.setProperty('--firstburgerspan','31deg');
-    document.documentElement.style.setProperty('--secondburgerspan','-31deg');
-  
-      }
-      else{
-  
-        document.documentElement.style.setProperty('--firstburgerspan','0deg');
-      document.documentElement.style.setProperty('--secondburgerspan','0deg');
-      }
-
-},[drawerIsOpen])
-
-
-
-
-
-
-
-
+  }, [drawerIsOpen])
 
 
   const openDrawerHandler = () => {
-    setDrawerIsOpen(inverse =>!inverse);
+    setDrawerIsOpen(inverse => !inverse);
   };
 
   const closeDrawerHandler = () => {
-
     setDrawerIsOpen(false);
   };
 
-
-
   return (
- <>
-  {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
-      <SideDrawer  show={drawerIsOpen} onClick={closeDrawerHandler}>
-        
+    <>
+      {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
+      <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
         <nav className="main-navigation__drawer-nav">
-   
           <NavLinks />
         </nav>
       </SideDrawer>
- <MainHeader>
+      <MainHeader>
 
+        <div className='main-content'>
 
+         <Link to='/home-page' ><div style={{ margin: drawerIsOpen ? '12vw' : 0 }} className='logo'>
+            <img src={MagmaLogo} alt='Magma' />
+          </div>
+          </Link>
+          <nav className='nav-bar'>
+            <NavLinks ></NavLinks>
 
+          </nav>
 
+        </div>
 
-
-
-   <div className='main-content'>
-
-  
-     <div style={{margin: drawerIsOpen?'12vw':0}}   className='logo'>
-         <img  src={MagmaLogo} alt='Magma'/>
-     </div>
- 
-     <nav className='nav-bar'>
-     <NavLinks></NavLinks>
-
-     </nav>
-
-     </div>  
-
-     <button  
+        <button
           className="main-navigation__menu-btn"
           onClick={openDrawerHandler}
         >
           <span />
-      {!drawerIsOpen && <span />}
-      {drawerIsOpen && <span style={{'display':'none'}} />}
-          <span  />
+          {!drawerIsOpen && <span />}
+          {drawerIsOpen && <span style={{ 'display': 'none' }} />}
+          <span />
         </button>
- </MainHeader>
- 
- </>
+      </MainHeader>
+
+    </>
   )
 }
 

@@ -5,6 +5,7 @@ import footerImage from "../../assets/images/FooterLogo.png";
 import firstbackground from '../../assets/images/contact-section-bkg.png';
 import { Link } from 'react-router-dom';
 import SocialMedia from '../UiElement/SocialMedia';
+import { HashLink as ScrollLink } from "react-router-hash-link";
 const Footer = () => {
   return (
    <section id='footer'>
@@ -26,19 +27,19 @@ const Footer = () => {
             </div>
             <div className='footer-nav-links'>
               <div className='footer-nav-col1'>
-              <Link to=''>Home</Link>
-              <Link to=''>Our Team</Link>
-              <Link to=''>About Us</Link>
+              <Link to='/'>Home</Link>
+              <ScrollLink smooth to='/home-page/#our-team-section'>Our Team</ScrollLink>
+              <Link to='/about-us'>About Us</Link>
               </div>
           
               <div className='footer-nav-col1'>
-              <Link to=''>Contact Us</Link>
-            <Link to=''>Our Services</Link>
-              <Link to=''>Our Products</Link>
+              <ScrollLink smooth to='/home-page/#contact-us'>Contact Us</ScrollLink>
+            <Link to='/services'>Our Services</Link>
+              <Link to='/products'>Our Products</Link>
               </div>
               </div>
           </div>
-         
+         <div className='footer-line'></div>
           <div className='footer-nav'>
             <div className='footer-nav-title'>
               <h1>Contact Us</h1>

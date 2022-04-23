@@ -18,7 +18,7 @@
 
     // title are you ready...
     h1 {
-
+        text-align: center;    
         margin: 0;
         font-size: 2.7vw;
         color: $OrangeColor;
@@ -40,7 +40,7 @@
         height: 20px;
         background-color: $OrangeColor;
         border: 2px solid $VioletColor;
-    text-align: center;
+        text-align: center;
         animation: rotatespin 5s infinite;
 
         @keyframes rotatespin {
@@ -62,10 +62,12 @@
 
     // contact us
     .form-title {
-        display: flex;
-        padding: 0 20px;
-        align-items: center;
-// image paper fly
+       @include ContainerFlex(space-between);
+        padding-left: 0;
+        padding-right: 150px;
+     
+
+       // image paper fly
         img {
             position: relative;
             z-index: 999;
@@ -75,8 +77,8 @@
 
         //contact us text
         h1 {
-
-            @include Title(2vw)
+            
+        @include Title(2vw)
         }
     }
 }
@@ -128,8 +130,9 @@
         .form-title {
             display: flex;
             padding: 0 20px;
+            justify-content: center;
             img {
-                width: 30%;
+                width: 20%;
             }
 
             h1 {
@@ -144,7 +147,7 @@
 
         img {
             position: relative;
-            width: 100%;
+            width: 80%;
         }
 
     }

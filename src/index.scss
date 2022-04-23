@@ -1,41 +1,48 @@
 //import Global Variable and css for Websites
 @import "./assets/styles/Global";
 
+
+// css for spinner load between pages
+@import "./shared/UiElement/Spinner";
+// import the navBar
 @import "./shared/NavBar/MainHeader";
 @import "./shared/NavBar/MainNavigation";
 @import './shared/NavBar/SideDrawer';
 @import './shared/UiElement/Backdrop';
+//footer
+@import "./shared/Footer/Footer";
+//css for custom animations
+@import "./assets/styles/CustomAOS";
 
-
-
-
-@import "./shared/UiElement/Spinner";
-@import "./components/HeroSection/HeroSection";
+//cs ui sahred element
 @import "./shared/FormElements/Button";
-@import "./components/VisionSection/VisionSection";
-
-@import "./components/OurServices/OurServices";
-
-@import "./components/OurProduct/OurProduct";
-@import "./components/ProductPage/Template";
-
-@import "./components/OurTeam/OurTeam";
-
-@import "./components/Contact-us/contactUs";
 @import "./shared/UiElement/Card";
 @import "./shared/FormElements/Input";
+
+
+
+
+// import css Home Page
+@import "./components/HeroSection/HeroSection";
+@import "./components/VisionSection/VisionSection";
+@import "./components/OurServices/OurServices";
+@import "./components/OurProduct/OurProduct";
+@import "./components/OurTeam/OurTeam";
+@import "./components/Contact-us/contactUs";
+
+
+
+
+//productPage
+@import "./components/ProductPage/Template";
 @import "./components/ProductPage/Product";
 
+//about us page
 @import "./components/AboutUs/AboutUs";
 @import "./components/AboutUs/AboutCompany";
 
-
-
+// services page
 @import "./components/ServicesPage/ServicesBusiness";
 @import "./components/ServicesPage/ServicesIdea";
-
 @import "./components/ServicesPage/ServicesDesign";
 @import "./components/ServicesPage/ServicesDigital";
-
-@import "./shared/Footer/Footer";
-@import "./assets/styles/CustomAOS";

@@ -22,7 +22,6 @@
      font-size: 1vw;
  }   
  .arrow-image{
-     
      width: 10%;
  }
 }
@@ -38,7 +37,8 @@
 .vision-title{
     text-align: center;
     position: relative;
-    padding-top: 20px;
+    padding-top: 30px;
+  text-transform: uppercase;
     h1{
  @include Title(3vw)
     }
@@ -47,8 +47,11 @@
         line-height: 0;
         color: $OrangeColor;
         font-size: 3vw;
+         margin: 0;
+        padding-top: 25px;
         font-weight: bolder;
     }
+
 }
 .vision-container{
  padding-top: 15px;
@@ -59,22 +62,25 @@
     
 // text left container
     .vision-text{
-        padding: 0px 50px;
-
+     
         h1{
         @include Text(1vw);
+        padding: 0 48px;
+        
         }
         width: 50%;
+        // width: 50%;
 
     }
 // image right container
     .image-right-vision{
-        width: 50%;
+      
         border-radius: 50px;
         img{
          display: block;
            @include ImageWithBorder(50px);  
         } }
+    
 
 }
 
@@ -95,9 +101,10 @@
     .vision-title{
         position: relative;
         padding-top: 40px;          
-        margin-left: 11px;
+        text-transform: capitalize;
         h1{
      @include Title(25px);
+ 
         }
         h2{
         font-size: 15px;

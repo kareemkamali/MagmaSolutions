@@ -1,26 +1,8 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import { HashLink as ScrollLink } from "react-router-hash-link";
 
 const NavLinks = () => {
-
-const ContactScroll=()=>{
-
-  window.scrollTo({
-    top:3270,
-    behavior:"smooth"
-  })
-
-}
-const TeamScroll=()=>{
-
-  window.scrollTo({
-    top:2600,
-    behavior:"smooth"
-  })
-
-}
-
-
   return (
     <ul className="nav-links">
    
@@ -40,9 +22,9 @@ const TeamScroll=()=>{
       </NavLink>
     </li>
     <li>
-      <NavLink to='//' onClick={TeamScroll} >
+      <ScrollLink smooth to="/home-page/#our-team-section" >
          Our Team
-      </NavLink>
+      </ScrollLink>
     </li>
     <li>
       <NavLink to='/about-us' >
@@ -50,12 +32,11 @@ const TeamScroll=()=>{
       </NavLink>
     </li>
     <li>
-      <NavLink to='//' 
-      onClick={ContactScroll} >
-         Contact Us
-      </NavLink>
+      <ScrollLink smooth to='/home-page/#contact-us' 
 
-     
+      >
+         Contact Us
+      </ScrollLink>
     </li>
     </ul>
   )

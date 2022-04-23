@@ -20,11 +20,11 @@
   .behind-text{
     position: absolute;
     top: 50px;
-      left: 200px;
+    left: 200px;
     z-index: -1;
-    object-fit: contain;
+    object-fit: contain;  
     width: 40%;
-    animation: behindTextAnimated 2s ease-in;
+    animation: behindTextAnimated 7s ease-in-out;
     
   }
   @keyframes behindTextAnimated {

@@ -17,7 +17,6 @@ const OurServices = () => {
 (<React.Fragment key={services.id}>
 {/* change background for Mobiles */}
 <ServicesList
-
 id={services.id}
 serviceImage={services.serviceImage}
 textColor={services.textColor}
@@ -33,33 +32,7 @@ bgImageMobile={services.bgImageMobile}
 )
 
 ))}
-
-
-
-
-
-
-
-
-
-
-
    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    
   </section>
   </>

@@ -1,8 +1,12 @@
 import React, { useReducer, useEffect } from 'react';
 
+
+// validate for ccheck if email correct
 import { validate } from '../util/validators';
 
 
+
+// reducer for initaial state
 const inputReducer = (state, action) => {
   switch (action.type) {
     case 'CHANGE':
@@ -50,6 +54,7 @@ const Input = props => {
     });
   };
 
+  // multi elment maybe text area mayme input
   const element =
     props.element === 'input' ? (
       <input

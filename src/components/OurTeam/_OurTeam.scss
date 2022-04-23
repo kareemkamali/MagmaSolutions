@@ -76,36 +76,6 @@
       
       
      
-        // .team-content {
-        //     height: 100%;
-        //     width: 27%;
-        //     background-color: red;
-        //     text-align: center;
-        //     @include ContainerFlex(space-around);
-        //     padding: 0;
-        //     flex-direction: column;
-
-        //     // title below image
-        //     h1 {
-        //         margin: 0;
-        //         text-align: center;
-        //         color: $VioletColorLight;
-        //         font-size: 1.5vw;
-        //         font-weight: 600;
-        //     }
-
-        //     //text below each image
-        //     h2 {
-        //         @include Text(1vw);
-        //         color: $OrangeColor;
-        //     }
-
-        //     img {
-        //         @include ImageWithBorder(50px);
-        //         object-fit: cover;
-        //     }
-
-        // }
 
         //line between each employee
         .line-team {
@@ -141,7 +111,7 @@
             height: 100%;
             flex-direction: column;
             position: relative;
-            padding: 0px 10px;
+            padding: 0px 50px;
             justify-content: center;
             align-items: center;
 
