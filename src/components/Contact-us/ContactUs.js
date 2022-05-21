@@ -12,9 +12,57 @@ import {
 import Spins from '../../shared/UiElement/Spins';
 import Input from '../../shared/FormElements/Input';
 import Button from '../../shared/FormElements/Button';
+import { useForm } from '../../shared/hooks/form-hook';
+import emailjs from '@emailjs/browser';
+
 const ContactUs = () => {
 
-  const inputHandler = () => { }
+  const form=useRef();
+
+  const name='name';
+ const [formState, inputHandler] = useForm(
+  {
+    name: {
+      value: '',
+      isValid: false
+    },
+    email: {
+      value: '',
+      isValid: false
+    },
+    message: {
+      value: '',
+      isValid: false
+    },
+  },
+  false
+);
+
+
+const sendContactHandler=event=>{
+  event.preventDefault();
+  try { 
+
+
+
+    console.log(form);
+    const formData = new FormData();
+
+    formData.append('name',formState.inputs.name.value);
+    formData.append('email',formState.inputs.email.value);
+    formData.append('message',formState.inputs.message.value);
+    console.log(formState.inputs.name.value);
+    // console.log(form.current)
+    emailjs.sendForm('service_f75ji1l','template_80gzk0e',form.current,'_97coDA-w4izN2cjt');
+  
+  } 
+  catch (err) {
+ 
+    console.log(err)
+  }
+
+}
+  
 
   return (
     <>
@@ -30,9 +78,17 @@ const ContactUs = () => {
               <h1 data-aos="fade-down" >Are You Ready To Grow?</h1>
               {/* Card of white bg */}
               <Card  dataaos="fade-up">
+
+
+
+
                 <div className='form-container-contact'>
                   {/* spins the circle at corner form */}
                   <Spins />
+
+
+
+                  <form  ref={form} onSubmit={sendContactHandler}>  
                   <div className='form-content'>
                     <div className='form-title'>
                       <img src={PaperImage} />
@@ -42,6 +98,7 @@ const ContactUs = () => {
                     {/* input components for each type and label
   the validator for check if entered in the typle is correctly
   */}
+
                     <Input
                       element="input"
                       id="name"
@@ -51,6 +108,7 @@ const ContactUs = () => {
                       errorText="Please enter a name."
                       onInput={inputHandler}
                       placeholder='Enter Your Full Name'
+                      name='name'
                     />
                     <Input
                       element="input"
@@ -61,6 +119,7 @@ const ContactUs = () => {
                       errorText="Please enter a valid email address."
                       onInput={inputHandler}
                       placeholder='Enter Your Email'
+                      name='email'
                     />
                     <Input
                       id="message"
@@ -70,20 +129,23 @@ const ContactUs = () => {
                       errorText="Please enter a valid description (at least 5 characters)."
                       onInput={inputHandler}
                       placeholder='Enter Your Message'
+                      name='message'
                     />
 
 
 
 
-                  </div>
-
+                  </div>   
                   <div className='btn-contactUs'>
-                    <Button size='medium' to='/'>Send Message</Button></div>
+                    <Button type='submit' size='medium' >Send Message</Button></div>
+                  </form>
+               
                   <Spins />
 
-
+                
 
                 </div>
+          
 
 
               </Card>

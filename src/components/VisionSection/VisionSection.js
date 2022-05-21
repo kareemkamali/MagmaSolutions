@@ -21,7 +21,9 @@ const VisionSection = () => {
                       {/* container has text and images */}
           <div className='vision-container'>
             <div data-aos="fade-right" className='vision-text'>
-              <h1>Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegng. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling</h1>
+              <h1>
+              Magma Solutions  is a development , social media management , digital marketing , designing , and planning agency . That specializes in providing high-end innovation technology solution .
+              </h1>
             </div>
             <div data-aos="fade-left"  data-aos-duration="2000" className='image-right-vision'>
               <img data-aos="shadow-animation" data-aos-delay="1000"  src={VisionImage} alt='vision' />

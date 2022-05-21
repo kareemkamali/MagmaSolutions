@@ -6,9 +6,9 @@ import ProductImage3 from '../../assets/images/product3.png';
 const DUMMY_PRODUCT=[
 
     {
-        id:'product1',
+        id:'portfolio',
         image:ProductImage1,
-        text:'Jupiter Template' 
+        text:'portfolio Template' 
     },
     {
         id:'product2',

@@ -24,8 +24,8 @@ const OurTeam = () => {
             {/* i will maked them into array of Lists */}
             <div data-aos="flip-left" className='team-content'>
               <img src={person1} className='team-person-image' alt='website developer'></img>
-              <h1>Web Developer</h1>
-              <h2>Lorem ipsum helo world what ever how is potato ya hala overpro</h2>
+              <h1>Taha Abdallah</h1>
+              <h2>Web Developper</h2>
 
             </div>
             <img className='line-team' alt='line' src={LineImage} />
@@ -33,15 +33,15 @@ const OurTeam = () => {
 
             <div data-aos='flip-right' className='team-content'>
               <img src={person1} className='team-person-image' alt='mobile developer'></img>
-              <h1>Mobile Developer</h1>
-              <h2>Lorem ipsum helo world wha sds sd sd s asas as sds st ever how is potato ya hala overpro</h2>
+              <h1>Karim Kamali</h1>
+              <h2>Web Developer</h2>
 
             </div>
             <img className='line-team' src={LineImage} alt='line' />
             <div data-aos='flip-left' className='team-content'>
               <img src={person1} className='team-person-image' alt='ceo developer'></img>
-              <h1>CEO</h1>
-              <h2>Lorem ipsum helo world what ever how is potato ya hala overpro</h2>
+              <h1>Azzam Baitiye</h1>
+              <h2>Management</h2>
 
             </div>
             

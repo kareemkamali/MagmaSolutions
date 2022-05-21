@@ -29,7 +29,7 @@ const DUMMY_SERVICES=[
         imageLine:Line1,
         textColor:'#683385',
         title:'Development',
-        text:'Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegng. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum.. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns.'
+        text:'Magma Solutions Provides all needed services and support to create your own Websites or build your online solutions .'
     },
     {
         id:'Design',
@@ -39,7 +39,7 @@ const DUMMY_SERVICES=[
         textColor:'#fff',
         title:'Design',
         imageLine:Line2,
-        text:'Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegng. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum.. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns.'
+        text:'Welcome to design Department , Magma Solutions Provides all Kinds of Design .  And we have a specialized Designers Team working on convert your idea to amazing reality .'
         
     },
     {
@@ -50,7 +50,7 @@ const DUMMY_SERVICES=[
         textColor:'#683385',
         title:'Digital Marketing',
         imageLine:Line3,
-        text:'Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegng. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum.. Lörem ipsum vande sebel blandkostare koren dåns. Pande trena att adar, kadegt. Matnationalism åfaling. Lörem ipsum vande sebel blandkostare koren dåns.'
+        text:'it’s not just what we do but how we do it, and putting the social in Digital Marketing is a large part of how we do it exactly. Magma Solutions is a Digital marketing company in Lebanon with a vast experience in Marketing and an extensive knowledge in creatively designing and implementing effective digital marketing plans for businesses in the Lebanese and MENA market.'
         
     },
 

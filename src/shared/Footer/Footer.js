@@ -46,9 +46,9 @@ const Footer = () => {
             </div>
             <div className='footer-nav-links'>
               <div className='footer-nav-col1'>
-              <Link to=''>Karim_kamali@gmail.com</Link>
-              <Link to=''>+961 76168142</Link>
-              <Link to=''>06 438454</Link>
+              <Link to=''>info@magmasolutions.net</Link>
+              <Link to=''>+961 81 40 70 58</Link>
+              <Link to=''>06 43 93 90</Link>
               </div>
           
   
