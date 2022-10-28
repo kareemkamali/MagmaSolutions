@@ -40,7 +40,7 @@ const ContactUs = () => {
 
 
 const sendContactHandler=event=>{
-  event.preventDefault();
+  // event.preventDefault();
   try { 
 
 
@@ -53,7 +53,7 @@ const sendContactHandler=event=>{
     formData.append('message',formState.inputs.message.value);
     console.log(formState.inputs.name.value);
     // console.log(form.current)
-    emailjs.sendForm('service_f75ji1l','template_80gzk0e',form.current,'_97coDA-w4izN2cjt');
+    emailjs.sendForm('service_jy7teij','template_80gzk0e',form.current,'_97coDA-w4izN2cjt');
   
   } 
   catch (err) {
@@ -137,7 +137,7 @@ const sendContactHandler=event=>{
 
                   </div>   
                   <div className='btn-contactUs'>
-                    <Button type='submit' size='medium' >Send Message</Button></div>
+                    <Button type='submit' size='medium' disabled={!formState.isValid} >Send Message</Button></div>
                   </form>
                
                   <Spins />

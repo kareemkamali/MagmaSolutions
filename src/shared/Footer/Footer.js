@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
             <div className='footer-nav-links'>
               <div className='footer-nav-col1'>
-              <Link to='/'>Home</Link>
+              <ScrollLink smooth to='/home-page/#hero'>Home</ScrollLink>
               <ScrollLink smooth to='/home-page/#our-team-section'>Our Team</ScrollLink>
               <Link to='/about-us'>About Us</Link>
               </div>

@@ -12,6 +12,7 @@ import MainNavigation from '../shared/NavBar/MainNavigation'
 const HomePage = () => {
   return (
  <>
+
    <MainNavigation></MainNavigation>
    <HeroSection></HeroSection> 
    <VisionSection></VisionSection> 

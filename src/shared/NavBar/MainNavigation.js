@@ -44,6 +44,8 @@ const MainNavigation = () => {
           <NavLinks />
         </nav>
       </SideDrawer>
+
+      
       <MainHeader>
 
         <div className='main-content'>

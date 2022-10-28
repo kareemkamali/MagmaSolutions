@@ -2,6 +2,7 @@ import React from 'react'
 import OurTeambackground from "../../assets/images/OurTeam-background.png";
 import person1 from "../../assets/images/person1team.png";
 import LineImage from "../../assets/images/our-teamLine.png";
+import person2 from "../../assets/images/MyImage.jpg";
 
 const OurTeam = () => {
 
@@ -32,8 +33,11 @@ const OurTeam = () => {
 
 
             <div data-aos='flip-right' className='team-content'>
-              <img src={person1} className='team-person-image' alt='mobile developer'></img>
-              <h1>Karim Kamali</h1>
+           
+           <div className='team-person-image'>
+           <img src={person2} alt='mobile developer'></img>
+           </div>
+               <h1>Karim Kamali</h1>
               <h2>Web Developer</h2>
 
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink as ScrollLink } from "react-router-hash-link";
 
 
 
@@ -26,6 +27,19 @@ const Button = props => {
       >
         {props.children}
       </Link>
+    );
+  }
+  if (props.scroll) {
+    return (
+      <ScrollLink
+        to={props.scroll}
+        // exact={props.exact}
+        smooth={true}
+        className={`button button--${props.size || 'default'} ${props.inverse &&
+          'button--inverse'} ${props.danger && 'button--danger'}`}
+      >
+        {props.children}
+      </ScrollLink>
     );
   }
   return (

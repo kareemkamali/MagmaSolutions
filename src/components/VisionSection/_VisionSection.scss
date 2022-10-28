@@ -20,6 +20,7 @@
      margin: 0;
      color: $VioletColor;
      font-size: 1vw;
+     font-weight: 700;
  }   
  .arrow-image{
      width: 10%;
@@ -66,6 +67,7 @@
         h1{
         @include Text(1vw);
         padding: 0 48px;
+     
         
         }
         width: 50%;
@@ -77,8 +79,10 @@
       
         border-radius: 50px;
         img{
+           
          display: block;
            @include ImageWithBorder(50px);  
+           width: 85%;
         } }
     
 

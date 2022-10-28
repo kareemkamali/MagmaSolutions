@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <>
 
-        <div className="hero-section">
+        <div id='hero' className="hero-section">
         <img className="hero-bg" src={HeroBackground}/>
         {/* mobile change bg */}
         <img className="hero-bg-m" src={HeroBackgroundMobile}/>
@@ -25,7 +25,7 @@ const HeroSection = () => {
               <h1>Only One Creative way</h1>
               <h2>To Do Things Perfectly ...</h2>
               <div className='hero-btn'>
-              <Button to='/home' size='big' >Get A Quote</Button>
+              <Button scroll='/home-page/#contact-us' size='big' >Get A Quote</Button>
               </div></div>
             <div data-aos="zoom-in" className='hero-image'> <img src={HeroImage} alt=""/></div>
         </div>
